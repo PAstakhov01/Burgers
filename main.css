@@ -84,7 +84,7 @@
     font-family: "Lifehack"; }
 
 .nav {
-  position: absolute;
+  position: fixed;
   left: 80%;
   top: 6%; }
   .nav__list {
@@ -164,15 +164,15 @@
   position: relative;
   width: 25%;
   height: 50%;
-  display: flex;
   justify-content: center;
   align-items: center; }
 .third__pic {
-  width: 100%;
-  height: 100%;
-  filter: grayscale(100%); }
+  max-width: auto;
+  max_hight: auto; }
 
 .picture {
+  filter: grayscale(100%);
+  object-fit: cover;
   width: 100%;
   hight: 100%; }
 
