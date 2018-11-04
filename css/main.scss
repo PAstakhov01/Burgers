@@ -121,12 +121,12 @@ margin-left:15px;
   display: flex;
   border-radius: 5px;
   background-color: rgb(228, 80, 40);
-    font-size: 13px;
+  
   width: 97px;
   height: 35px;
  
  &__item {
-     
+   
     margin: auto;
     color: white;
     font-size: 19px;
@@ -185,18 +185,24 @@ color: white;
 
 
 
-.best {
-        display:flex;
+.best {     
+    width: 1000px;
+  &__list {
+  list-style: none;
+        display: flex;
     justify-content: center;
     align-items: flex-start;
-  &__list {
-        flex-wrap: wrap;
-    list-style-type: none;
-    display: flex;
   }
    &__item {
-    width: 33%;
+   width: 33%;
+     text-align: center;
+    margin: 0 10px;
+    &__list {
     list-style: none;
+    }
+    &__container {
+ text-align: center;
+    }
   }
   &__main {
    margin-bottom: 10px;
@@ -215,10 +221,7 @@ color: white;
     opacity: .8;
  
   }
-  &__pic  {
-       margin-bottom: 30px;
-  text-align: center;
-  }
+
 
 }
 

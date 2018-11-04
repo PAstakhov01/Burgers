@@ -1,124 +1,129 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Intro</title>
+	<title>Burgers</title>
    
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400i,600%7CRoboto:400,400i" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" type="text/css" href="normalize.css">
-	<link rel="stylesheet"  href=" animate.min.css">
-	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet"  href="css/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 <body>
-	<div class="landing">
-<div class="landing__first">
+	<div class="wrapper">
+<section class="section__top">
+	<div class="section__top__container">
 		<header class="header">
 			<div class="logo">
-				<img src="logo.png" class="logo__pic" alt="картинка">
+				<img src="logos/logo.png" class="logo__pic" alt="картинка">
 			</div>
 			<nav class="menu">
 		<ul class="menu__list">
 			<li class="menu__item">
 				<a href="#" class="menu__link" >
-					<div class="menu__text">О НАС</div>
+					<div class="menu__text">о нас</div>
 				</a>
 			</li>
 			<li class="menu__item">
 				<a href="#" class="menu__link" >
-					<div class="menu__text"><span class="menu__dot">&bull;</span>БУРГЕРЫ</div>
+					<div class="menu__text"><span class="menu__dot">&bull;</span>бургеры</div>
 				</a>
 			</li>
 			<li class="menu__item">
 				<a href="#" class="menu__link" >
-					<div class="menu__text"><span class="menu__dot">&bull;</span>КОМАНДА</div>
+					<div class="menu__text"><span class="menu__dot">&bull;</span>команда</div>
 				</a>
 			</li>
 			<li class="menu__item">
 				<a href="#" class="menu__link" >
-					<div class="menu__text"><span class="menu__dot">&bull;</span>МЕНЮ</div>
+					<div class="menu__text"><span class="menu__dot">&bull;</span>меню</div>
 				</a>
 			</li>
 			<li class="menu__item">
 				<a href="#" class="menu__link" >
-					<div class="menu__text"><span class="menu__dot">&bull;</span>ОТЗЫВЫ</div>
+					<div class="menu__text"><span class="menu__dot">&bull;</span>отзывы</div>
 				</a>
 			</li>
 			<li class="menu__item">
 				<a href="#" class="menu__link" >
-					<div class="menu__text"><span class="menu__dot">&bull;</span>КАК МЫ РАБОТАЕМ</div>
+					<div class="menu__text"><span class="menu__dot">&bull;</span>как мы работаем</div>
 				</a>
 			</li>
 			<li class="menu__item">
 				<a href="#" class="menu__link" >
-					<div class="menu__text"><span class="menu__dot">&bull;</span>КОНТАКТЫ</div>
+					<div class="menu__text"><span class="menu__dot">&bull;</span>контакты</div>
 				</a>
 			</li>
 		</ul>
 		</nav>
-		<div class="button"><a href="#" class="button__item">ЗАКАЗАТЬ</a></div>			
+		<div class="button"><a href="#" class="button__item">заказать</a></div>			
 		</header>
-	
-		<div class="start">
-		<div class="start__left">
-			<img src="big-pic-drops.png" class="start__left__drop"  alt="картинка">
-			<img src="big-pic.png" class="start__left__pic"  alt="картинка"> 
+	 
+		<div class="banner">
+		<div class="banner__left">
+			<img src="pictures/big-pic.png" class="banner__left__pic"  alt="картинка"> 
 		</div>	
-		<div class="start__right">
-			<div class="start__right__main"><span class="text__item">МЫ ДЕЛАЕМ</span></div>
-			<div class="start__right__text"><span class="text__item">натуральные бургеры</span></div>
+		<div class="banner__right">
+			<div class="banner__right__main"><h1 class="text__item">мы делаем</h1></div>
+			<div class="banner__right__text"><span class="text__item">натуральные бургеры</span></div>
 			
 		</div>		
 		</div>
-	<div class="arrow"><img src="arrow-scroll.png" class="arrow__item" alt="картинка"></div>
+	<div class="arrow"><a class="arrow__link" href="#"> <img src="arrow-scroll.png" class="arrow__item" alt="картинка">
+	</a></div>
 </div>
-<div class="landing__second">
-	<div class="best">МЫ ЛУЧШИЕ</div>
-	<div class="second">
-	<ul class="second__list">
-	<li class="second__item"><div class="meat">
-       <ul class="meat__list">
-       	<li class="meat__pic"><img src="meat.png" alt="картинка"></li>
-       	<li class="meat__main">100% свежее мясо</li>
-       	<li class="meat__text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</li>
+</section>
+
+
+<section class="section__best">
+	 <div class="section__best__container">
+	<h2 class="section__best__title">мы лучшие</h2>
+	<div class="best">
+	<ul class="best__list">
+	<li class="best__item"><div class="best__item__container">
+     
+       	<div style="background-image: url(pictures/meat.png);"></div>
+       	<h3 class="best__main">100% свежее мясо</h3>
+       	<span class="best__text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</span>
        	
-       </ul>
+    
 		
 	</div></li>
-	<li class="second__item"><div class="hand">
-	<ul class="hand__list">
-		<li class="hand__pic"><img src="hand.png" alt="картинка"></li>
-		<li class="hand__main">Ручная сборка</li>
-		<li class="hand__text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает сюжетный реформаторский пафос.</li>
-
-	</ul>	
+	<li class="best__item"><div class="best__item__container">
+	
+		<div></div>
+		<h3 class="best__main">Ручная сборка</h3>
+		<span class="best__text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает сюжетный реформаторский пафос.</span>	
 	</div></li>
-	<li class="second__item"><div class="natural">
-		<ul class="natural__list">
-			<li class="natural__pic"><img src="natural.png" alt="картинка"></li>
-            <li class="natural__main">Натуральные ингредиенты</li>
-            <li class="natural__text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.</li>
-		</ul>
+	<li class="best__item"><div class="best__item__container">
+	
+			<div></div>
+            <h3 class="best__main">Натуральные ингредиенты</h3>
+            <span class="best__text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.</span>
+		
 
 	</div></li>
 
 	</ul>
 </div>
+</div>
+</section>
 
 </div>
-<div class="landing__third">
+<section class="section__reviews">
 	<div class="third">
 		<ul class="third__list">
-<li class="third__item" ><div class="third__pic"><img src="photo-1.png" class="picture" alt="картинка"></div></li>
-<li class="third__item" ><div class="third__pic"><img src="photo-2.png" class="picture" alt="картинка"></div></li>
-<li class="third__item" ><div class="third__pic"><img src="photo-3.png" class="picture" alt="картинка"></div></li>
-<li class="third__item" ><div class="third__pic"><img src="photo-4.png" class="picture" alt="картинка"></div></li>
-<li class="third__item" ><div class="third__pic"><img src="photo-5.png" class="picture" alt="картинка"></div></li>
-<li class="third__item" ><div class="third__pic"><img src="photo-6.png" class="picture" alt="картинка"></div></li>
-<li class="third__item" ><div class="third__pic"><img src="photo-7.png" class="picture" alt="картинка"></div></li>
-<li class="third__item" ><div class="third__pic"><img src="photo-8.png" class="picture" alt="картинка"></div></li>
+<li class="third__item" ><div class="third__pic"><img src="photos/photo-1.png" class="picture" alt="картинка"></div></li>
+<li class="third__item" ><div class="third__pic"><img src="photos/photo-2.png" class="picture" alt="картинка"></div></li>
+<li class="third__item" ><div class="third__pic"><img src="photos/photo-3.png" class="picture" alt="картинка"></div></li>
+<li class="third__item" ><div class="third__pic"><img src="photos/photo-4.png" class="picture" alt="картинка"></div></li>
+<li class="third__item" ><div class="third__pic"><img src="photos/photo-5.png" class="picture" alt="картинка"></div></li>
+<li class="third__item" ><div class="third__pic"><img src="photos/photo-6.png" class="picture" alt="картинка"></div></li>
+<li class="third__item" ><div class="third__pic"><img src="photos/photo-7.png" class="picture" alt="картинка"></div></li>
+<li class="third__item" ><div class="third__pic"><img src="photos/photo-8.png" class="picture" alt="картинка"></div></li>
 		</ul>
 	</div>
-</div>
+</section>
 
 
 	</div>

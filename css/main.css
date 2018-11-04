@@ -95,7 +95,6 @@
   display: flex;
   border-radius: 5px;
   background-color: #e45028;
-  font-size: 13px;
   width: 97px;
   height: 35px; }
   .button__item {
@@ -132,16 +131,20 @@
   margin-bottom: 40px; }
 
 .best {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start; }
+  width: 1000px; }
   .best__list {
-    flex-wrap: wrap;
-    list-style-type: none;
-    display: flex; }
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; }
   .best__item {
     width: 33%;
-    list-style: none; }
+    text-align: center;
+    margin: 0 10px; }
+    .best__item__list {
+      list-style: none; }
+    .best__item__container {
+      text-align: center; }
   .best__main {
     margin-bottom: 10px;
     font-size: 24px;
@@ -156,9 +159,6 @@
     font-size: 14px;
     line-height: 30px;
     opacity: .8; }
-  .best__pic {
-    margin-bottom: 30px;
-    text-align: center; }
 
 .third__list {
   padding: 0;
