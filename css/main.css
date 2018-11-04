@@ -103,6 +103,10 @@
     font-size: 19px;
     font-family: "Ubuntu";
     text-decoration: none; }
+  .button__reviews {
+    width: 100%;
+    height: 100vh;
+    min-height: 650px; }
 
 .banner {
   display: flex;
@@ -118,7 +122,7 @@
     color: #f9b43b;
     text-align: left; }
   .banner__right__text {
-    font-size: 65px;
+    font-size: 32px;
     text-align: left;
     color: white;
     line-height: 60px;
@@ -159,8 +163,50 @@
     font-size: 14px;
     line-height: 30px;
     opacity: .8; }
+  .best__picture {
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto; }
 
-.third__list {
+
+
+ .reviews__desc:hover 
+ {
+   visibility: visible;
+ }
+.reviews__desc {
+  position: absolute;
+  left: 10px;
+  top: -3px;
+  padding: 50px 20px 0;
+  visibility: hidden; 
+}
+.reviews__title {
+  font-family: Gagalin-Regular;
+  color: white;
+  margin-bottom: 20px; }
+.reviews__text {
+  font-size: 14px;
+  font-family: "Ubuntu";
+  color: white;
+  font-weight: normal;
+  line-height: 20px;
+  margin-bottom: 20px; }
+.reviews__button {
+  margin-top: 26px;
+  display: flex;
+  text-align: center;
+  background-color: #2f3234;
+  width: 115px;
+  height: 35px;
+  border-radius: 5px;
+  font-family: Ubuntu;
+  font-weight: normal;
+  color: white;
+  font-size: 13px; }
+.reviews__list {
+  list-style: none;
   padding: 0;
   margin: 0;
   height: 100%;
@@ -168,14 +214,15 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap; }
-.third__item {
+.reviews__item {
   float: left;
   position: relative;
   width: 25%;
   height: 50%;
   justify-content: center;
   align-items: center; }
-.third__pic {
+.reviews__pic {
+  height: 50vh;
   max-width: auto;
   max_hight: auto; }
 

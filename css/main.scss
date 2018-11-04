@@ -133,7 +133,11 @@ margin-left:15px;
     font-family: "Ubuntu";
     text-decoration: none;
  }
-
+&__reviews {
+   width: 100%;
+ height: 100vh;
+ min-height: 650px;
+}
 }
 .banner {
     
@@ -160,7 +164,7 @@ margin-left:15px;
 
 }
 &__text {
-font-size: 65px;
+font-size: 32px;
   text-align: left;
 color: white;
     line-height: 60px;
@@ -203,6 +207,7 @@ color: white;
     &__container {
  text-align: center;
     }
+    
   }
   &__main {
    margin-bottom: 10px;
@@ -221,7 +226,13 @@ color: white;
     opacity: .8;
  
   }
-
+ &__picture {
+         height: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+   
+    margin: 0 auto;
+    }
 
 }
 
@@ -231,9 +242,45 @@ color: white;
 
 
 
-.third {
+.reviews {
 
+ &__desc {
+     position: absolute;
+         left: 10px;
+    top: -3px;
+    padding: 50px 20px 0;
+   
+    visibility: hidden
+ }
+ &__title {
+     font-family: Gagalin-Regular;
+    color: white;
+    margin-bottom: 20px;
+ }
+ &__text {
+     font-size: 14px;
+font-family: "Ubuntu";
+color: rgb(255, 255, 255);
+    font-weight: normal;
+    line-height: 20px;
+    margin-bottom: 20px;
+ }
+ &__button {
+     margin-top: 26px;
+ display: flex;
+    text-align: center;
+   background-color: rgb(47, 50, 52);
+    width: 115px;
+    height: 35px;
+    border-radius: 5px;
+    font-family: Ubuntu;
+    font-weight: normal;
+    color: white;
+    font-size: 13px;
+    
+ }
   &__list {
+  list-style: none;
   padding: 0;
   margin: 0;
       height: 100%;  
@@ -253,6 +300,7 @@ color: white;
     align-items: center;
   }
 &__pic {
+    height: 50vh;
     max-width: auto;
     max_hight: auto;
     
