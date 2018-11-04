@@ -169,19 +169,12 @@
     background-position: center;
     margin: 0 auto; }
 
-
-
- .reviews__desc:hover 
- {
-   visibility: visible;
- }
 .reviews__desc {
   position: absolute;
   left: 10px;
   top: -3px;
   padding: 50px 20px 0;
-  visibility: hidden; 
-}
+  visibility: hidden; }
 .reviews__title {
   font-family: Gagalin-Regular;
   color: white;
