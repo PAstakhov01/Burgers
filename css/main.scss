@@ -45,6 +45,27 @@ position: fixed;
     align-items: center;
     }
 }
+&-team {
+   width: 100%;
+ height: 100vh;
+ min-height: 650px;
+  background-size: cover;
+  background-image: url(fon-team.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  &__container {
+   float: right;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: rgba(70, 70, 70, 0.9);
+  }
+}
 &-best {
    width: 100%;
  height: 100vh;
@@ -237,6 +258,16 @@ color: white;
 
 }
 
+.team {
+  &__title {
+          margin-top: 100px;
+    margin-left: 80px;
+
+      font-family: Gagalin-Regular;
+    color: #f9b43b;
+    font-size: 72px;
+  }
+}
 
 
 
@@ -306,7 +337,7 @@ color: rgb(255, 255, 255);
 &__pic {
     height: 50vh;
     max-width: auto;
-    max_hight: auto;
+    max-height: auto;
     
 }
 .reviews__item:hover .reviews__desc{
