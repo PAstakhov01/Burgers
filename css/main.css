@@ -220,7 +220,7 @@
 .reviews__pic {
   height: 50vh;
   max-width: auto;
-  max_height: auto; }
+  max-height: auto; }
 .reviews .reviews__item:hover .reviews__desc {
   display: block; }
 
