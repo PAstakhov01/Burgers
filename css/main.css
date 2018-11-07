@@ -1,12 +1,12 @@
 @font-face {
   font-family: 'Gagalin-Regular';
-  src: url(Fonts/Gagalin-Regular.ttf); }
+  src: url(fonts/Gagalin-Regular.ttf); }
 @font-face {
   font-family: 'Ubuntu';
-  src: url(Fonts/Ubuntu-B.ttf); }
+  src: url(fonts/Ubuntu-B.ttf); }
 @font-face {
   font-family: 'Lifehack';
-  src: url(Fonts/Lifehack.otf); }
+  src: url(fonts/Lifehack.otf); }
 .nav {
   position: fixed;
   left: 80%;
