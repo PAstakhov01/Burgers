@@ -3,7 +3,7 @@
   src: url(fonts/Gagalin-Regular.ttf); }
 @font-face {
   font-family: 'Ubuntu';
-  src: url(fonts/Ubuntu-B.ttf); }
+  src: url(fonts/Ubuntu-Regular.ttf); }
 @font-face {
   font-family: 'Lifehack';
   src: url(fonts/Lifehack.otf); }
@@ -139,7 +139,7 @@
   .button__item {
     margin: auto;
     color: white;
-    font-size: 19px;
+    font-size: 17px;
     font-family: "Ubuntu";
     text-decoration: none; }
   .button__reviews {
