@@ -1,16 +1,16 @@
 @font-face {
 font-family: 'Gagalin-Regular';
 
- src: url(Fonts/Gagalin-Regular.ttf) ;
+ src: url(fonts/Gagalin-Regular.ttf) ;
  }
 @font-face {
 font-family: 'Ubuntu';
- src: url(Fonts/Ubuntu-B.ttf) ;
+ src: url(fonts/Ubuntu-B.ttf) ;
 
 }
 @font-face {
   font-family: 'Lifehack';
- src: url(Fonts/Lifehack.otf) ;
+ src: url(fonts/Lifehack.otf) ;
 }
 .nav {
 position: fixed;
@@ -88,7 +88,7 @@ position: fixed;
       }
       &__title {
        padding-top: 134px;
-  padding-bottom: 54px;
+  
   font-size: 71.713px;
   font-family: "Gagalin-Regular";
   color: rgb(47, 50, 52);
@@ -234,15 +234,17 @@ color: white;
 .best {     
     width: 1000px;
      &__desc {
+         vertical-align: middle;
  text-align: center;
     }
-  &__list {
+  &__list { 
+       vertical-align: middle;
   list-style: none;
         display: flex;
     justify-content: center;
     align-items: flex-start;
   }
-   &__item {
+   &__item {     vertical-align: middle;
    width: 33%;
      text-align: center;
     margin: 0 10px;
@@ -252,7 +254,7 @@ color: white;
    
     
   }
-  &__main {
+  &__main { 
    margin-bottom: 10px;
   font-size: 24px;
   font-family: "Lifehack";
@@ -364,11 +366,13 @@ color: white;
 .reviews {
 
  &__desc {
+ transition: 1s;
+
   position: absolute;
   left: 10px;
   top: -3px;
   padding: 50px 20px 0;
-  display: none;
+  opacity: 0;
  }
  &__title {
      font-family: Gagalin-Regular;
@@ -389,8 +393,8 @@ color: rgb(255, 255, 255);
  display: flex;
     text-align: center;
    background-color: rgb(47, 50, 52);
-    width: 115px;
-    height: 35px;
+        padding: 10px;
+    padding-right: 15px;
     border-radius: 5px;
     font-family: Ubuntu;
     font-weight: normal;
@@ -425,7 +429,7 @@ color: rgb(255, 255, 255);
     
 }
 .reviews__item:hover .reviews__desc{
-  display: block;
+   opacity: 1;
 }
 
 }

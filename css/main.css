@@ -1,12 +1,12 @@
 @font-face {
   font-family: 'Gagalin-Regular';
-  src: url(Fonts/Gagalin-Regular.ttf); }
+  src: url(fonts/Gagalin-Regular.ttf); }
 @font-face {
   font-family: 'Ubuntu';
-  src: url(Fonts/Ubuntu-B.ttf); }
+  src: url(fonts/Ubuntu-B.ttf); }
 @font-face {
   font-family: 'Lifehack';
-  src: url(Fonts/Lifehack.otf); }
+  src: url(fonts/Lifehack.otf); }
 .nav {
   position: fixed;
   left: 80%;
@@ -73,7 +73,6 @@
     align-items: center; }
   .section-best__title {
     padding-top: 134px;
-    padding-bottom: 54px;
     font-size: 71.713px;
     font-family: "Gagalin-Regular";
     color: #2f3234;
@@ -175,13 +174,16 @@
 .best {
   width: 1000px; }
   .best__desc {
+    vertical-align: middle;
     text-align: center; }
   .best__list {
+    vertical-align: middle;
     list-style: none;
     display: flex;
     justify-content: center;
     align-items: flex-start; }
   .best__item {
+    vertical-align: middle;
     width: 33%;
     text-align: center;
     margin: 0 10px; }
@@ -270,11 +272,12 @@
   border-width: 0px 6px 10px 6px; }
 
 .reviews__desc {
+  transition: 1s;
   position: absolute;
   left: 10px;
   top: -3px;
   padding: 50px 20px 0;
-  display: none; }
+  opacity: 0; }
 .reviews__title {
   font-family: Gagalin-Regular;
   color: white;
@@ -292,8 +295,8 @@
   display: flex;
   text-align: center;
   background-color: #2f3234;
-  width: 115px;
-  height: 35px;
+  padding: 10px;
+  padding-right: 15px;
   border-radius: 5px;
   font-family: Ubuntu;
   font-weight: normal;
@@ -321,7 +324,7 @@
   max-width: auto;
   max-height: auto; }
 .reviews .reviews__item:hover .reviews__desc {
-  display: block; }
+  opacity: 1; }
 
 .picture {
   filter: grayscale(100%);
