@@ -175,12 +175,14 @@
   vertical-align: middle;
   text-align: center; }
 .best__list {
+  padding: 0;
   vertical-align: middle;
   list-style: none;
   display: flex;
   justify-content: center;
   align-items: flex-start; }
 .best__item {
+  padding: 0;
   vertical-align: middle;
   width: 33%;
   text-align: center;
