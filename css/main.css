@@ -22,7 +22,7 @@
   height: 100vh;
   min-height: 650px;
   background-size: cover;
-  background-image: url(fon-top.png);
+  background-image: url(fons/fon-top.png);
   background-repeat: no-repeat;
   background-position: center; }
   .section-top__container {
@@ -38,7 +38,7 @@
   height: 100vh;
   min-height: 650px;
   background-size: cover;
-  background-image: url(fon-team.png);
+  background-image: url(fons/fon-team.png);
   background-repeat: no-repeat;
   background-position: center; }
   .section-team__container {
@@ -57,7 +57,7 @@
   height: 100vh;
   min-height: 650px;
   background-size: cover;
-  background-image: url(fon-best.png);
+  background-image: url(fons/fon-best.png);
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
@@ -65,14 +65,12 @@
   align-items: center; }
   .section-best__container {
     flex-direction: column;
-    width: 1100px;
+    width: 940px;
     margin: 0 auto;
-    height: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center; }
   .section-best__title {
-    padding-top: 134px;
     font-size: 71.713px;
     font-family: "Gagalin-Regular";
     color: #2f3234;
@@ -83,7 +81,7 @@
   height: 100vh;
   min-height: 650px;
   background-size: cover;
-  background-image: url(fon-menu.png);
+  background-image: url(fons/fon-menu.png);
   background-repeat: no-repeat;
   background-position: center; }
   .section-menu__title {
@@ -93,6 +91,14 @@
     font-size: 72px;
     color: white;
     padding-left: 50px; }
+.section-map {
+  width: 100%;
+  height: 100vh;
+  min-height: 650px;
+  background-size: cover;
+  background-image: url(fons/fon-map.png);
+  background-repeat: no-repeat;
+  background-position: center; }
 
 .header {
   padding-top: 25px;
@@ -175,12 +181,14 @@
   vertical-align: middle;
   text-align: center; }
 .best__list {
+  padding: 0;
   vertical-align: middle;
   list-style: none;
   display: flex;
   justify-content: center;
   align-items: flex-start; }
 .best__item {
+  padding: 0;
   vertical-align: middle;
   width: 33%;
   text-align: center;
