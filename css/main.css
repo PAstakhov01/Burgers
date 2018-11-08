@@ -53,7 +53,6 @@
     align-items: flex-start;
     background-color: rgba(70, 70, 70, 0.9); }
 .section-best {
-   vertical-align: middle;
   width: 100%;
   height: 100vh;
   min-height: 650px;
@@ -65,12 +64,13 @@
   justify-content: center;
   align-items: center; }
   .section-best__container {
-        margin: 0 auto;
-    width: 940px;
-    display: flex; 
     flex-direction: column;
-    justify-content: center;
-    height: 100%;}
+    width: 1100px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
   .section-best__title {
     padding-top: 134px;
     font-size: 71.713px;
@@ -171,44 +171,41 @@
   margin: 0 auto;
   margin-bottom: 40px; }
 
-.best {
-  width: 1000px; }
-  .best__desc {
-    vertical-align: middle;
-    text-align: center; }
-  .best__list {
-    vertical-align: middle;
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start; }
-  .best__item {
-         padding-right: 40px;
-    vertical-align: middle;
-    width: 33%;
-    text-align: center;
-    margin: 0 10px; }
-    .best__item__list {
-      list-style: none; }
-  .best__main {
-    margin-bottom: 10px;
-    font-size: 24px;
-    font-family: "Lifehack";
-    color: #2f3234;
-    line-height: 1.167;
-    text-align: center; }
-  .best__text {
-    font-family: Ubuntu;
-    font-weight: 300;
-    color: #2f3234;
-    font-size: 14px;
-    line-height: 30px;
-    opacity: .8; }
-  .best__picture {
-    height: 100px;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 0 auto; }
+.best__desc {
+  vertical-align: middle;
+  text-align: center; }
+.best__list {
+  vertical-align: middle;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; }
+.best__item {
+  vertical-align: middle;
+  width: 33%;
+  text-align: center;
+  margin: 0 10px; }
+  .best__item__list {
+    list-style: none; }
+.best__main {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-family: "Lifehack";
+  color: #2f3234;
+  line-height: 1.167;
+  text-align: center; }
+.best__text {
+  font-family: Ubuntu;
+  font-weight: 300;
+  color: #2f3234;
+  font-size: 14px;
+  line-height: 30px;
+  opacity: .8; }
+.best__picture {
+  height: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto; }
 
 .team__post {
   font-size: 14px;
