@@ -7,6 +7,11 @@
 @font-face {
   font-family: 'Lifehack';
   src: url(fonts/Lifehack.otf); }
+.wrapper {
+  min-height: 100%;
+  position: relative;
+  overflow: hidden; }
+
 .nav {
   position: fixed;
   left: 80%;
@@ -71,7 +76,7 @@
     background-color: rgba(70, 70, 70, 0.9); }
     @media (max-width: 768px) {
       .section-team__container {
-        width: auto;
+        width: 100%;
         text-align: center; } }
   @media (max-width: 768px) {
     .section-team {
@@ -79,7 +84,7 @@
 .section-best {
   width: 100%;
   height: 100vh;
-  min-height: 650px;
+  min-height: 320px;
   background-size: cover;
   background-image: url(fons/fon-best.png);
   background-repeat: no-repeat;
@@ -103,7 +108,7 @@
 .section-menu {
   width: 100%;
   height: 100vh;
-  min-height: 650px;
+  min-height: 320px;
   background-size: cover;
   background-image: url(fons/fon-menu.png);
   background-repeat: no-repeat;
@@ -118,7 +123,7 @@
 .section-map {
   width: 100%;
   height: 100vh;
-  min-height: 650px;
+  min-height: 320px;
   background-size: cover;
   background-image: url(fons/fon-map.png);
   background-repeat: no-repeat;
