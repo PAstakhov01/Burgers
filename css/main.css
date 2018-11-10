@@ -35,8 +35,7 @@
   background-position: center; }
   @media (max-width: 768px) {
     .section-top {
-      width: auto;
-      height: auto; } }
+      width: auto; } }
   .section-top__container {
     flex-direction: column;
     width: 1100px;
@@ -199,12 +198,23 @@
     font-family: "Gagalin-Regular";
     color: #f9b43b;
     text-align: left; }
+    @media (max-width: 768px) {
+      .banner-right__main {
+        float: none;
+        text-align: center;
+        align-items: center; } }
   .banner-right__text {
     font-size: 62px;
     text-align: left;
     color: white;
     line-height: 60px;
     font-family: "Lifehack"; }
+    @media (max-width: 768px) {
+      .banner-right__text {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center; } }
 
 .arrow__link {
   display: block;
@@ -214,6 +224,9 @@
   background-position: center;
   margin: 0 auto;
   margin-bottom: 40px; }
+@media (max-width: 768px) {
+  .arrow {
+    padding-top: 50px; } }
 
 .best__desc {
   vertical-align: middle;
@@ -255,14 +268,14 @@
 
 @media (max-width: 768px) {
   .team__desc {
-    display: flex; } }
+    flex-direction: column; } }
 .team__post {
   font-size: 14px;
   font-family: "Ubuntu";
   color: white;
   font-weight: bold; }
 .team__text {
-  width: 600px;
+  width: auto;
   font-size: 14px;
   font-family: "Ubuntu";
   color: white; }
@@ -277,12 +290,20 @@
   display: flex;
   justify-content: center;
   align-items: center; }
+  @media (max-width: 768px) {
+    .team__photo {
+      margin: 0 auto;
+      float: none; } }
 .team__title {
   margin-top: 100px;
   margin-left: 80px;
   font-family: Gagalin-Regular;
   color: #f9b43b;
   font-size: 72px; }
+  @media (max-width: 768px) {
+    .team__title {
+      margin-left: none;
+      float: none; } }
 .team__list {
   list-style: none; }
 .team__item {
@@ -366,6 +387,9 @@
   justify-content: center;
   align-items: center;
   background-color: #000; }
+  @media (max-width: 768px) {
+    .reviews__item {
+      width: 50%; } }
 .reviews__pic {
   height: 50vh;
   max-width: auto;
