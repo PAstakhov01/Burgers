@@ -119,6 +119,21 @@
     font-size: 72px;
     color: white;
     padding-left: 50px; }
+.section-order {
+  width: 100%;
+  height: 100vh;
+  min-height: 320px;
+  background-size: cover;
+  background-image: url(fons/fon-order.png);
+  background-repeat: no-repeat;
+  background-position: center; }
+  .section-order__container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    max-width: 940px; }
 .section-map {
   width: 100%;
   height: 100vh;
@@ -405,5 +420,135 @@
 
 .reviews .reviews__item:hover img {
   filter: grayscale(1) opacity(0.4); }
+
+.order__main {
+  font-size: 4.5rem;
+  font-family: "Gagalin-Regular";
+  color: #f9b43b;
+  line-height: 0.889;
+  text-align: center; }
+.order__title {
+  text-align: left;
+  font-family: "Ubuntu";
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  color: white; }
+.order__form {
+  width: 29.6875rem; }
+  .order__form-block {
+    margin-left: 1.25rem; }
+.order__block {
+  margin-bottom: 0.9375rem; }
+.order__contacts {
+  display: flex; }
+.order__input {
+  border: initial;
+  padding: 0.3125rem 1.25rem;
+  border-radius: 0.3125rem;
+  background: white;
+  height: 1.5625rem;
+  width: 11.25rem; }
+  .order__input-street {
+    width: 26.25rem;
+    margin: inherit; }
+  .order__input-home {
+    width: 3.75rem;
+    height: 1.5625rem; }
+.order__adress {
+  display: flex; }
+.order-comments {
+  margin-left: 2.35rem; }
+  .order-comments__input {
+    border: initial;
+    padding: 0.3125rem 1.25rem;
+    border-radius: 0.3125rem;
+    background: white;
+    width: 28.75rem;
+    height: 6.875rem; }
+.order-pay {
+  display: flex;
+  margin-top: 20px; }
+  .order-pay__button {
+    padding: 3px 16px;
+    border-radius: 7px;
+    background: #e35028;
+    color: white;
+    border: none;
+    font-family: 'Ubuntu';
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 30px;
+    text-transform: uppercase; }
+  .order-pay__clean {
+    color: #ffffff;
+    font-family: 'Ubuntu';
+    font-size: 14px;
+    font-weight: 300;
+    background-color: transparent;
+    border: none; }
+  .order-pay__label {
+    margin-left: 10px; }
+
+.map__footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3.75rem;
+  background: black;
+  display: flex; }
+.map__container {
+  width: 91%;
+  margin: 0 auto;
+  display: flex; }
+.map__info {
+  width: 50%; }
+.map__adress {
+  color: #ffffff;
+  font-family: 'Ubuntu';
+  font-size: 0.875rem;
+  margin-bottom: 2px;
+  margin-top: 5px; }
+.map__call {
+  color: #e45028;
+  font-family: 'Ubuntu';
+  font-weight: 700;
+  text-decoration: none; }
+
+.social {
+  width: 50%; }
+  .social__list {
+    float: right;
+    display: flex;
+    list-style: none; }
+  .social__item {
+    margin-left: 20px; }
+
+.icon-vk {
+  background-image: url(socials/vk.png);
+  height: 20px;
+  width: 20px;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.icon-fb {
+  background-image: url(socials/fb.png);
+  height: 20px;
+  width: 20px;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.icon-tw {
+  background-image: url(socials/twitter.png);
+  height: 20px;
+  width: 20px;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.icon-inst {
+  background-image: url(socials/inst.png);
+  height: 20px;
+  width: 20px;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 /*# sourceMappingURL=main.css.map */
