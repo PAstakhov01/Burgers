@@ -85,7 +85,7 @@ position: fixed;
           @include tablets { 
         text-align: center;
        flex-direction: column;
-       padding: 0 16%;
+       padding: 0 ;
        
       }
 }
@@ -147,7 +147,7 @@ position: fixed;
   font-family: "Gagalin-Regular";
   color: rgb(47, 50, 52);
   line-height: 0.889;
-  text-align: center;
+  text-align: center; @include phones {     font-size: 2.25rem;}
       }
 
 }
@@ -293,6 +293,7 @@ margin: 0 auto;
 
         @include tablets {       
      text-align: center;
+     padding: 0;
      }
 
 &__main  {
@@ -362,14 +363,14 @@ color: white;
   list-style: none;
         display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: flex-start; @include phones { display: block;}
   }
    &__item {  
    padding: 0;
       vertical-align: middle;
    width: 33%;
      text-align: center;
-    margin: 0 10px;
+    margin: 0 10px;   @include phones {    width: 100%; }
     &__list {
     list-style: none;
     }
@@ -382,7 +383,8 @@ color: white;
   font-family: "Lifehack";
   color: rgb(47, 50, 52);
   line-height: 1.167;
-  text-align: center;
+  text-align: center; @include phones {      margin-bottom: 0.625rem;      line-height: 0.250;
+    font-size: 1.2rem;}
   }
   &__text { 
     font-family: Ubuntu;
@@ -390,7 +392,8 @@ color: white;
     color: #2f3234;
     font-size: 0.875rem;
         line-height: 1.5rem;
-    opacity: .8;
+    opacity: .8; @include phones {     font-size: 0.625rem;  line-height: 0.250;
+    line-height: 1.5rem; }
  
   }
  &__picture {
@@ -398,7 +401,11 @@ color: white;
     background-repeat: no-repeat;
     background-position: center;
    
-    margin: 0 auto;
+    margin: 0 auto; 
+    @include phones {    
+        height: 2.55rem;
+    background-size: cover;
+    width: 2.85rem;}
     }
 
 }

@@ -53,7 +53,7 @@
     .section-top {
       text-align: center;
       flex-direction: column;
-      padding: 0 16%; } }
+      padding: 0; } }
 .section-team {
   width: 100%;
   height: 100vh;
@@ -104,6 +104,9 @@
     color: #2f3234;
     line-height: 0.889;
     text-align: center; }
+    @media (max-width: 480px) {
+      .section-best__title {
+        font-size: 2.25rem; } }
 .section-menu {
   width: 100%;
   height: 100vh;
@@ -216,7 +219,8 @@
   padding-left: 60px; }
   @media (max-width: 768px) {
     .banner-right {
-      text-align: center; } }
+      text-align: center;
+      padding: 0; } }
   .banner-right__main {
     float: left;
     font-size: 72px;
@@ -265,12 +269,18 @@
   display: flex;
   justify-content: center;
   align-items: flex-start; }
+  @media (max-width: 480px) {
+    .best__list {
+      display: block; } }
 .best__item {
   padding: 0;
   vertical-align: middle;
   width: 33%;
   text-align: center;
   margin: 0 10px; }
+  @media (max-width: 480px) {
+    .best__item {
+      width: 100%; } }
   .best__item__list {
     list-style: none; }
 .best__main {
@@ -280,6 +290,11 @@
   color: #2f3234;
   line-height: 1.167;
   text-align: center; }
+  @media (max-width: 480px) {
+    .best__main {
+      margin-bottom: 0.625rem;
+      line-height: 0.250;
+      font-size: 1.2rem; } }
 .best__text {
   font-family: Ubuntu;
   font-weight: 300;
@@ -287,11 +302,21 @@
   font-size: 0.875rem;
   line-height: 1.5rem;
   opacity: .8; }
+  @media (max-width: 480px) {
+    .best__text {
+      font-size: 0.625rem;
+      line-height: 0.250;
+      line-height: 1.5rem; } }
 .best__picture {
   height: 100px;
   background-repeat: no-repeat;
   background-position: center;
   margin: 0 auto; }
+  @media (max-width: 480px) {
+    .best__picture {
+      height: 2.55rem;
+      background-size: cover;
+      width: 2.85rem; } }
 
 @media (max-width: 768px) {
   .team__desc {
