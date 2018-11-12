@@ -154,6 +154,9 @@
 
 .menu {
   display: flex; }
+  @media (max-width: 768px) {
+    .menu {
+      width: 100%; } }
   .menu__list {
     display: flex;
     text-decoration: none;
@@ -202,6 +205,13 @@
     .banner {
       flex-direction: column; } }
 
+@media (max-width: 768px) {
+  .banner-left {
+    width: 100%; } }
+@media (max-width: 768px) {
+  .banner-left__pic {
+    width: 70%; } }
+
 .banner-right {
   padding-left: 60px; }
   @media (max-width: 768px) {
@@ -215,6 +225,7 @@
     text-align: left; }
     @media (max-width: 768px) {
       .banner-right__main {
+        font-size: 50px;
         float: none;
         text-align: center;
         align-items: center; } }
@@ -226,6 +237,7 @@
     font-family: "Lifehack"; }
     @media (max-width: 768px) {
       .banner-right__text {
+        font-size: 44px;
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -421,73 +433,79 @@
 .reviews .reviews__item:hover img {
   filter: grayscale(1) opacity(0.4); }
 
-.order__main {
-  font-size: 4.5rem;
-  font-family: "Gagalin-Regular";
-  color: #f9b43b;
-  line-height: 0.889;
-  text-align: center; }
-.order__title {
-  text-align: left;
-  font-family: "Ubuntu";
-  font-size: 0.875rem;
-  line-height: 1.5rem;
-  color: white; }
-.order__form {
-  width: 29.6875rem; }
-  .order__form-block {
-    margin-left: 1.25rem; }
-.order__block {
-  margin-bottom: 0.9375rem; }
-.order__contacts {
+.order {
   display: flex; }
-.order__input {
-  border: initial;
-  padding: 0.3125rem 1.25rem;
-  border-radius: 0.3125rem;
-  background: white;
-  height: 1.5625rem;
-  width: 11.25rem; }
-  .order__input-street {
-    width: 26.25rem;
-    margin: inherit; }
-  .order__input-home {
-    width: 3.75rem;
-    height: 1.5625rem; }
-.order__adress {
-  display: flex; }
-.order-comments {
-  margin-left: 2.35rem; }
-  .order-comments__input {
+  .order__main {
+    font-size: 4.5rem;
+    font-family: "Gagalin-Regular";
+    color: #f9b43b;
+    line-height: 0.889;
+    text-align: center; }
+  .order__title {
+    text-align: left;
+    font-family: "Ubuntu";
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    color: white; }
+  .order__form {
+    width: 29.6875rem; }
+    .order__form-block {
+      margin-left: 1.25rem; }
+  .order__block {
+    margin-bottom: 0.9375rem; }
+  .order__contacts {
+    display: flex; }
+  .order__input {
     border: initial;
     padding: 0.3125rem 1.25rem;
     border-radius: 0.3125rem;
     background: white;
-    width: 28.75rem;
-    height: 6.875rem; }
-.order-pay {
-  display: flex;
-  margin-top: 20px; }
-  .order-pay__button {
-    padding: 3px 16px;
-    border-radius: 7px;
-    background: #e35028;
-    color: white;
-    border: none;
-    font-family: 'Ubuntu';
-    font-size: 13px;
-    font-weight: 500;
-    line-height: 30px;
-    text-transform: uppercase; }
-  .order-pay__clean {
-    color: #ffffff;
-    font-family: 'Ubuntu';
-    font-size: 14px;
-    font-weight: 300;
-    background-color: transparent;
-    border: none; }
-  .order-pay__label {
-    margin-left: 10px; }
+    height: 1.5625rem;
+    width: 11.25rem; }
+    .order__input-street {
+      width: 26.25rem;
+      margin: inherit; }
+    .order__input-home {
+      width: 3.75rem;
+      height: 1.5625rem; }
+  .order__adress {
+    display: flex; }
+  .order-comments {
+    margin-left: 1.25rem; }
+    .order-comments__input {
+      border: initial;
+      padding: 0.3125rem 1.25rem;
+      border-radius: 0.3125rem;
+      background: white;
+      width: 28.75rem;
+      height: 6.875rem; }
+  .order-pay {
+    display: flex;
+    margin-top: 20px; }
+    .order-pay__button {
+      padding: 3px 16px;
+      border-radius: 7px;
+      background: #e35028;
+      color: white;
+      border: none;
+      font-family: 'Ubuntu';
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 30px;
+      text-transform: uppercase; }
+    .order-pay__clean {
+      color: #ffffff;
+      font-family: 'Ubuntu';
+      font-size: 14px;
+      font-weight: 300;
+      background-color: transparent;
+      border: none; }
+    .order-pay__label {
+      margin-left: 10px; }
+  @media (max-width: 768px) {
+    .order {
+      display: block;
+      margin: auto; } }
 
 .map__footer {
   position: absolute;

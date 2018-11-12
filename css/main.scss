@@ -209,9 +209,11 @@ margin: 0 auto;
   }
 .menu {
   display: flex;
-  
-
+   @include tablets {
+  width: 100%;
+  }
 &__list {
+
   display: flex;
   text-decoration: none;
   list-style: none;
@@ -277,9 +279,13 @@ margin: 0 auto;
     }
 }
 .banner-left {
-
+  @include tablets {
+       width: 100%;
+   }
     &__pic {
-  
+   @include tablets {
+       width: 70%;
+   }
     } 
 }
 .banner-right {
@@ -297,6 +303,7 @@ float: left;
  
   text-align: left;
     @include tablets {
+    font-size: 50px;
      float: none;
     text-align: center;
     align-items: center;
@@ -312,6 +319,7 @@ color: white;
    font-family: "Lifehack";
 
    @include tablets {
+     font-size: 44px;
    display: flex;
     flex-direction: column;
     text-align: center;
@@ -585,6 +593,7 @@ color: rgb(255, 255, 255);
 
 
 .order {
+display: flex; 
   &__main {
   font-size: 4.5rem;
   font-family: "Gagalin-Regular";
@@ -625,7 +634,7 @@ color: rgb(255, 255, 255);
 }
 &__adress { display: flex; }
 &-comments {
-      margin-left: 2.35rem;
+      margin-left: 1.25rem;
       &__input{
     border: initial;
     padding: 0.3125rem 1.25rem;
@@ -663,6 +672,10 @@ color: rgb(255, 255, 255);
 
     }
 }
+  @include tablets {
+  display: block;
+  margin: auto;
+  }
 }
 
 
