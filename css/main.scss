@@ -605,7 +605,7 @@ display: flex;
   font-family: "Gagalin-Regular";
   color: rgb(249, 180, 59);
   line-height: 0.889;
-  text-align: center;
+  text-align: center;  @include tablets {     font-size: 2.75rem; } @include phones {    font-size: 1.2rem; }
 
   }
     &__title {
@@ -634,9 +634,10 @@ display: flex;
     border-radius: 0.3125rem;
     background: white;
     height: 1.5625rem;
-    width: 11.25rem;
-    &-street  { width: 26.25rem;      margin: inherit; }
-    &-home {     width: 3.75rem; height: 1.5625rem;}
+    width: 11.25rem; @include phones {     width: 5.95rem; }
+    &-street  { width: 26.25rem;      margin: inherit;  @include phones { width: 15.75rem; }}
+    &-home {     width: 3.75rem; height: 1.5625rem;  @include tablets {  width: 3.70rem;} @include phones {  width: 1.043rem; }
+    }
 }
 &__adress { display: flex; }
 &-comments {
@@ -647,7 +648,7 @@ display: flex;
     border-radius: 0.3125rem;
     background: white;
     width: 28.75rem;
-    height: 6.875rem;
+    height: 6.875rem; @include tablets {   width: 25.75rem;} @include phones {   width: 15.75rem;  height: 5.875rem; } 
       }
 }
 &-pay {
@@ -660,7 +661,7 @@ display: flex;
     color: white;
     border: none;
     font-family: 'Ubuntu';
-    font-size: 13px;
+        font-size: 0.625rem;
     font-weight: 500;
     line-height: 30px;
     text-transform: uppercase

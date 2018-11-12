@@ -445,6 +445,12 @@
     color: #f9b43b;
     line-height: 0.889;
     text-align: center; }
+    @media (max-width: 768px) {
+      .order__main {
+        font-size: 2.75rem; } }
+    @media (max-width: 480px) {
+      .order__main {
+        font-size: 1.2rem; } }
   .order__title {
     text-align: left;
     font-family: "Ubuntu";
@@ -466,12 +472,24 @@
     background: white;
     height: 1.5625rem;
     width: 11.25rem; }
+    @media (max-width: 480px) {
+      .order__input {
+        width: 5.95rem; } }
     .order__input-street {
       width: 26.25rem;
       margin: inherit; }
+      @media (max-width: 480px) {
+        .order__input-street {
+          width: 15.75rem; } }
     .order__input-home {
       width: 3.75rem;
       height: 1.5625rem; }
+      @media (max-width: 768px) {
+        .order__input-home {
+          width: 3.70rem; } }
+      @media (max-width: 480px) {
+        .order__input-home {
+          width: 1.043rem; } }
   .order__adress {
     display: flex; }
   .order-comments {
@@ -483,6 +501,13 @@
       background: white;
       width: 28.75rem;
       height: 6.875rem; }
+      @media (max-width: 768px) {
+        .order-comments__input {
+          width: 25.75rem; } }
+      @media (max-width: 480px) {
+        .order-comments__input {
+          width: 15.75rem;
+          height: 5.875rem; } }
   .order-pay {
     display: flex;
     margin-top: 20px; }
@@ -493,7 +518,7 @@
       color: white;
       border: none;
       font-family: 'Ubuntu';
-      font-size: 13px;
+      font-size: 0.625rem;
       font-weight: 500;
       line-height: 30px;
       text-transform: uppercase; }
