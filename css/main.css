@@ -333,14 +333,14 @@
 .team__list {
   list-style: none; }
 .team__item {
-  margin-bottom: 40px; }
+  margin-bottom: 1.25rem; }
 .team__mate {
   text-decoration: none;
   display: inline-block;
   font-family: Gagalin-Regular;
   color: white;
   font-size: 16px;
-  margin-bottom: 20px; }
+  margin-bottom: 0.625rem; }
   .team__mate-activated {
     text-decoration: none;
     display: inline-block;
