@@ -143,7 +143,7 @@ position: fixed;
       &__title {
        
   
-  font-size: 71.713px;
+ font-size: 3.52rem;
   font-family: "Gagalin-Regular";
   color: rgb(47, 50, 52);
   line-height: 0.889;
@@ -388,8 +388,8 @@ color: white;
     font-family: Ubuntu;
     font-weight: 300;
     color: #2f3234;
-    font-size: 14px;
-    line-height: 30px;
+    font-size: 0.875rem;
+        line-height: 1.5rem;
     opacity: .8;
  
   }
@@ -445,15 +445,15 @@ color: white;
 
  }
   &__title {
-          margin-top: 100px;
-     margin-left: 80px;
+            
+     margin-left: 7.5rem;
 
       font-family: Gagalin-Regular;
     color: #f9b43b;
-    font-size: 72px;
+        font-size: 4.5rem;
        @include tablets {
-       margin-left: none;
-       float: none;
+      margin-left: 0.75rem;
+    float: none;
   }
 
   }
@@ -515,33 +515,39 @@ color: white;
   top: -3px;
   padding: 50px 20px 0;
   opacity: 0;
+  @include tablets {
+      padding: 0 0 0;
+  }
  }
  &__title {
+     font-size: 0.875rem;
      font-family: Gagalin-Regular;
     color: white;
     margin-bottom: 20px;
  }
  &__text {
-     font-size: 14px;
+         font-size: 0.875rem;
 font-family: "Ubuntu";
 color: rgb(255, 255, 255);
     font-weight: normal;
-    line-height: 20px;
-    margin-bottom: 20px;
+   line-height: 1.2rem;
+    margin-bottom: 1.25rem;
  }
  &__button {
  border:none;
-     margin-top: 26px;
+     margin-top: 1.5625rem;
  display: flex;
     text-align: center;
    background-color: rgb(47, 50, 52);
-        padding: 10px;
-    padding-right: 15px;
+        padding: 0.625rem;
+    padding-right:  0.9375rem;
     border-radius: 5px;
     font-family: Ubuntu;
     font-weight: normal;
     color: white;
-    font-size: 13px;
+    font-size: 0.756rem;
+    
+    text-align: center;
     
  }
   &__list {
