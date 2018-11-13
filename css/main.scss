@@ -682,7 +682,7 @@ display: flex;
     border: none;
     }
     &__label {
-        margin-left: 10px;
+        margin-left: 0.5rem;
 
     }
 }
@@ -743,3 +743,23 @@ display:flex;
 .icon-fb{ background-image: url(socials/fb.png);   height : 20px; width: 20px;     background-repeat: no-repeat; background-size: cover;}
 .icon-tw { background-image: url(socials/twitter.png);   height : 20px; width: 20px;     background-repeat: no-repeat; background-size: cover;}
 .icon-inst { background-image: url(socials/inst.png);   height : 20px; width: 20px;     background-repeat: no-repeat; background-size: cover;}
+
+
+.menu-drop {
+  &__list { display: flex; }
+  &__item {
+
+background-color: rgba(20, 20, 20, 0.7);
+background-color: #cfd8dc;
+  list-style: none;
+   text-decoration: none;
+  }
+&__text {
+    transform: rotate(-90deg);
+    white-space: nowrap;
+      color: white;
+    font-size: 2.5rem;
+    font-family: 'Gagalin';
+    position: absolute;
+}
+}

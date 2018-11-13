@@ -555,7 +555,7 @@
       background-color: transparent;
       border: none; }
     .order-pay__label {
-      margin-left: 10px; }
+      margin-left: 0.5rem; }
   @media (max-width: 768px) {
     .order {
       display: block;
@@ -622,5 +622,20 @@
   width: 20px;
   background-repeat: no-repeat;
   background-size: cover; }
+
+.menu-drop__list {
+  display: flex; }
+.menu-drop__item {
+  background-color: rgba(20, 20, 20, 0.7);
+  background-color: #cfd8dc;
+  list-style: none;
+  text-decoration: none; }
+.menu-drop__text {
+  transform: rotate(-90deg);
+  white-space: nowrap;
+  color: white;
+  font-size: 2.5rem;
+  font-family: 'Gagalin';
+  position: absolute; }
 
 /*# sourceMappingURL=main.css.map */
