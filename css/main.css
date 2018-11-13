@@ -562,6 +562,9 @@
       display: block;
       margin: auto; } }
 
+.order__title-pay {
+  color: white; }
+
 .map__footer {
   position: absolute;
   bottom: 0;
