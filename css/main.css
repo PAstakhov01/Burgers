@@ -118,8 +118,9 @@
   .section-menu__title {
     margin: 0;
     padding-top: 50px;
+    font-size: 4.5rem;
+    font-weight: 400;
     font-family: Gagalin-Regular;
-    font-size: 72px;
     color: white;
     padding-left: 50px; }
 .section-order {
@@ -596,28 +597,29 @@
     margin-left: 20px; }
 
 .icon-vk {
-  background-image: url(socials/vk.png);
+  background-image: url(socials/vk.svg);
   height: 20px;
   width: 20px;
+  fill: #ffb600;
   background-repeat: no-repeat;
   background-size: cover; }
 
 .icon-fb {
-  background-image: url(socials/fb.png);
+  background-image: url(socials/fb.svg);
   height: 20px;
   width: 20px;
   background-repeat: no-repeat;
   background-size: cover; }
 
 .icon-tw {
-  background-image: url(socials/twitter.png);
+  background-image: url(socials/twitter.svg);
   height: 20px;
   width: 20px;
   background-repeat: no-repeat;
   background-size: cover; }
 
 .icon-inst {
-  background-image: url(socials/inst.png);
+  background-image: url(socials/inst.svg);
   height: 20px;
   width: 20px;
   background-repeat: no-repeat;
@@ -631,11 +633,11 @@
   list-style: none;
   text-decoration: none; }
 .menu-drop__text {
+  position: absolute;
   transform: rotate(-90deg);
   white-space: nowrap;
   color: white;
   font-size: 2.5rem;
-  font-family: 'Gagalin';
-  position: absolute; }
+  font-family: 'Gagalin'; }
 
 /*# sourceMappingURL=main.css.map */
