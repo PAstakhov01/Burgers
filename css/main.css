@@ -133,6 +133,9 @@
   background-image: url(fons/fon-order.png);
   background-repeat: no-repeat;
   background-position: center; }
+  @media (max-width: 768px) {
+    .section-order {
+      background-size: unset; } }
   .section-order__container {
     margin: 0 auto;
     display: flex;
@@ -614,17 +617,23 @@
   align-items: center;
   height: 100%; }
 .menu-drop__item {
+  cursor: pointer;
   height: 100vh;
   width: 11.5625rem;
   background-color: rgba(20, 20, 20, 0.7);
   list-style: none;
-  text-decoration: none; }
+  text-decoration: none;
+  position: relative; }
 .menu-drop__text {
   position: absolute;
-  transform: rotate(-90deg) translateX(-150%);
+  transform: rotate(180deg) translateX(50%);
   white-space: nowrap;
   color: white;
   font-size: 2.5rem;
-  font-family: 'Gagalin-Regular'; }
+  font-family: 'Gagalin-Regular';
+  writing-mode: vertical-lr;
+  text-align: center;
+  bottom: 50px;
+  left: 50%; }
 
 /*# sourceMappingURL=main.css.map */
