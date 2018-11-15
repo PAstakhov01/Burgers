@@ -125,6 +125,10 @@
     font-family: Gagalin-Regular;
     color: white;
     height: 0; }
+    @media (max-width: 480px) {
+      .section-menu__title {
+        font-size: 2.5rem;
+        left: 1rem; } }
 .section-order {
   width: 100%;
   height: 100vh;
@@ -610,6 +614,7 @@
 .menu-drop__list {
   display: flex;
   position: relative;
+  margin: 0;
   top: 0;
   bottom: 0;
   right: 0;
@@ -624,6 +629,9 @@
   list-style: none;
   text-decoration: none;
   position: relative; }
+  @media (max-width: 480px) {
+    .menu-drop__item {
+      width: 18%; } }
 .menu-drop__text {
   position: absolute;
   transform: rotate(180deg) translateX(50%);
@@ -635,5 +643,7 @@
   text-align: center;
   bottom: 50px;
   left: 50%; }
+.menu-drop__content {
+  display: none; }
 
 /*# sourceMappingURL=main.css.map */

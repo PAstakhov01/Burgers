@@ -169,7 +169,7 @@ position: fixed;
     left: 2rem;
     font-family: Gagalin-Regular;
     color: white;
-        height: 0;
+        height: 0; @include phones {    font-size: 2.5rem;  left: 1rem;  }
    
   }
 }
@@ -750,7 +750,7 @@ display:flex;
 
 
 .menu-drop {
-  &__list { display: flex;      position: relative;
+  &__list { display: flex;      position: relative; margin: 0;
     top: 0;
     bottom: 0;
     right: 0;
@@ -764,7 +764,7 @@ display:flex;
     background-color: rgba(20, 20, 20, 0.7);
     list-style: none;
     text-decoration: none;
-    position: relative;
+    position: relative; @include phones {     width: 18%; }
   }
 &__text {        position: absolute;
     transform: rotate(180deg) translateX(50%);
@@ -778,4 +778,5 @@ display:flex;
     left: 50%;
  
 }
+&__content { display:none; }
 }
