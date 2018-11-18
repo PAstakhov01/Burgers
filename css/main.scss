@@ -151,6 +151,26 @@ position: fixed;
       }
 
 }
+&-burger {
+    width: 100%;
+ height: 100vh;
+ min-height: 320px;
+  background-size: cover;
+  background-image: url(fons/fon-burger.png);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &__container {
+    margin: 0 auto;
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    max-width: 940px;
+}
+ 
+}
 &-menu {
  width: 100%;
  height: 100vh;
@@ -788,3 +808,89 @@ display:flex;
 }
 &__content { display:none; }
 }
+
+.slider {
+    
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__item {
+        position: relative;
+        list-style: none;
+    }
+    }
+    .slide {
+        display: flex;
+        &__img {
+            width: 100%;
+    margin-top: 6.6875rem;
+        }
+        &__title {
+            color: #ffffff;
+    font-family: 'Gagalin-Regular';
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 63.93px;
+        }
+        &__text {
+            width: 441px;
+    height: 86px;
+    color: #ffffff;
+    font-family: 'Ubuntu';
+    font-size: 14px;
+    line-height: 23.97px;
+        }
+        &__number {
+            color: #e35028;
+    font-family: 'Gagalin-Regular';
+    font-size: 72px;
+    letter-spacing: -1.79px;
+        }
+        &__curent {
+    color: #e35028;
+    font-family: 'Gagalin-Regular';
+    font-size: 30px;
+    letter-spacing: -0.75px;
+        } 
+        &__order {
+            display: flex;
+        }
+        &__button {
+            padding-top: 40px;
+    padding-left: 20px;
+          }  
+          &__makeorder {
+              border: none;
+              padding: 3px 16px;
+    border-radius: 0.4375rem;
+    background: #e35028;
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    font-family: 'Ubuntu';
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 30px;
+    text-transform: uppercase
+          }     
+           }
+.composition {
+    position: absolute;
+    top: 0;
+    }
+    .slider__arrows {
+    position: absolute;  
+    display: flex;    
+    justify-content: space-between;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    &-first {
+    background-image: url(pic/scroll-left.png);
+    }
+     &-second {
+    background-image: url(pic/scroll-right.png);
+    }
+    }
