@@ -217,6 +217,7 @@
   font-weight: 300;
   line-height: 42px;
   text-transform: uppercase;
+  margin-right: 4rem;
   color: white;
   font-family: "Ubuntu";
   text-decoration: none; }
@@ -239,7 +240,8 @@
     width: 100%; } }
 @media (max-width: 768px) {
   .banner-left__pic {
-    width: 70%; } }
+    margin-top: 0;
+    width: 60%; } }
 
 .banner-right {
   padding-left: 60px; }
@@ -687,6 +689,18 @@
 
 .slide {
   display: flex; }
+  @media (max-width: 480px) {
+    .slide {
+      margin-right: 2rem; } }
+  @media (max-width: 480px) {
+    .slide__pic {
+      margin: 0 auto;
+      width: 280px; } }
+  @media (max-width: 768px) {
+    .slide {
+      display: flex;
+      flex-direction: column;
+      text-align: center; } }
   .slide__img {
     width: 100%;
     margin-top: 6.6875rem; }
@@ -696,6 +710,10 @@
     font-size: 72px;
     font-weight: 400;
     line-height: 63.93px; }
+    @media (max-width: 480px) {
+      .slide__title {
+        margin: 0 auto;
+        font-size: 2rem; } }
   .slide__text {
     width: 441px;
     height: 86px;
@@ -703,21 +721,61 @@
     font-family: 'Ubuntu';
     font-size: 14px;
     line-height: 23.97px; }
+    @media (max-width: 768px) {
+      .slide__text {
+        text-align: center;
+        margin: 0 auto; } }
+    @media (max-width: 480px) {
+      .slide__text {
+        font-size: 12px;
+        width: 16rem; } }
   .slide__number {
     color: #e35028;
     font-family: 'Gagalin-Regular';
     font-size: 72px;
     letter-spacing: -1.79px; }
+    @media (max-width: 768px) {
+      .slide__number {
+        font-size: 2.5rem; } }
+    @media (max-width: 480px) {
+      .slide__number {
+        font-size: 2rem; } }
+  .slide__price {
+    display: flex; }
+    @media (max-width: 768px) {
+      .slide__price {
+        margin-top: 2rem; } }
+    @media (max-width: 480px) {
+      .slide__price {
+        margin-top: 4rem; } }
   .slide__curent {
     color: #e35028;
     font-family: 'Gagalin-Regular';
     font-size: 30px;
     letter-spacing: -0.75px; }
+    @media (max-width: 768px) {
+      .slide__curent {
+        font-size: 2.5rem;
+        margin-left: 1rem; } }
+    @media (max-width: 480px) {
+      .slide__curent {
+        margin-left: 0.4rem;
+        font-size: 2rem; } }
   .slide__order {
     display: flex; }
+    @media (max-width: 768px) {
+      .slide__order {
+        margin-left: 7rem; } }
+    @media (max-width: 480px) {
+      .slide__order {
+        margin-left: 0rem; } }
   .slide__button {
     padding-top: 40px;
     padding-left: 20px; }
+    @media (max-width: 480px) {
+      .slide__button {
+        padding-top: 2rem;
+        padding-left: 1rem; } }
   .slide__makeorder {
     border: none;
     padding: 3px 16px;
@@ -731,10 +789,22 @@
     font-weight: 500;
     line-height: 30px;
     text-transform: uppercase; }
+    @media (max-width: 480px) {
+      .slide__makeorder {
+        margin-top: 2rem; } }
+
+@media (max-width: 768px) {
+  .kkal__pic {
+    position: absolute;
+    right: 2rem;
+    top: 0; } }
 
 .composition {
   position: absolute;
   top: 0; }
+  @media (max-width: 480px) {
+    .composition {
+      left: -1rem; } }
 
 .slider__arrows {
   position: absolute;
@@ -742,10 +812,48 @@
   justify-content: space-between;
   width: 100%;
   top: 50%;
-  left: 0; }
-  .slider__arrows-first {
-    background-image: url(pic/scroll-left.png); }
+  left: 0;
+  border: transparent;
+  cursor: pointer;
+  background: transparent;
+  outline: none;
+  background-repeat: no-repeat .slider__arrows -first;
+    background-repeat-width: 2rem;
+    background-repeat-height: 2rem;
+    background-repeat-transform: rotate(90deg); }
   .slider__arrows-second {
-    background-image: url(pic/scroll-right.png); }
+    width: 2rem;
+    height: 2rem;
+    transform: rotate(-90deg); }
+
+.nav-trigger {
+  display: none; }
+  @media (max-width: 768px) {
+    .nav-trigger {
+      display: block; } }
+
+.nav-trigger.open {
+  background: #222; }
+
+.nav-trigger.close {
+  background: transparent; }
+
+.line {
+  display: block;
+  position: absolute;
+  width: 1.75rem;
+  height: 0.5rem;
+  background: #fff;
+  right: 0;
+  margin-right: 0.75rem; }
+
+.line:nth-child(1) {
+  top: 30px; }
+
+.line:nth-child(2) {
+  top: 42px; }
+
+.line:nth-child(3) {
+  top: 54px; }
 
 /*# sourceMappingURL=main.css.map */
