@@ -927,10 +927,14 @@ display:flex;
     }
      .nav-trigger {
      display:none;
-      @include tablets {display:block;}
+      @include tablets { display:block;     position: absolute;
+    width: 51px;
+    height: 70px;
+    right: 1px;
+    top: 0px; }
      }
     .nav-trigger.open {
-  background: $grey-black;
+  background: $grey-black; 
 
 }
 
