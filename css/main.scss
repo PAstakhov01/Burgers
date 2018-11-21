@@ -914,20 +914,17 @@ display:flex;
     outline: none;
     background-repeat: no-repeat
  
-     &s-second {
-       
-            width: 2rem;
-    height: 1rem;
-    transform: rotate(-44deg);
-    background: transparent;
-    border: none;
-   
-    }
+    
 
     }
    .slider__arrows-first {     max-width: 2rem;
     max-height: 2rem;     width: 2rem;
     height: 1rem; }
+    .slider__arrows-second {
+      max-width: 2rem;
+    max-height: 2rem;     width: 2rem;
+    height: 1rem;
+    }
      .hamburger-menu-link {
      display:none;
       @include tablets { display:block;     position: absolute;

@@ -817,14 +817,15 @@
   cursor: pointer;
   background: transparent;
   outline: none;
-  background-repeat: no-repeat .slider__arrow s-second;
-    background-repeat-width: 2rem;
-    background-repeat-height: 1rem;
-    background-repeat-transform: rotate(-44deg);
-    background-repeat-background: transparent;
-    background-repeat-border: none; }
+  background-repeat: no-repeat; }
 
 .slider__arrows-first {
+  max-width: 2rem;
+  max-height: 2rem;
+  width: 2rem;
+  height: 1rem; }
+
+.slider__arrows-second {
   max-width: 2rem;
   max-height: 2rem;
   width: 2rem;
