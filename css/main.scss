@@ -915,16 +915,27 @@ display:flex;
     background-repeat: no-repeat
     &-first {
         width: 2rem;
-    height: 2rem;
+    height: 1rem;
+      background: transparent;
+    border: none;
        transform: rotate(90deg);
     }
      &-second {
-         width: 2rem;
-    height: 2rem;
-        transform: rotate(-90deg)
+       
+            width: 2rem;
+    height: 1rem;
+    transform: rotate(-44deg);
+    background: transparent;
+    border: none;
    
     }
+
     }
+    slider__arrows-first {   width: 2rem;
+    height: 1rem;
+      background: transparent;
+    border: none;
+       transform: rotate(90deg);  }
      .hamburger-menu-link {
      display:none;
       @include tablets { display:block;     position: absolute;
@@ -959,6 +970,7 @@ display:flex;
     top: 54px;
 }
 .overlay {
+  margin-top: 100px;
   display: none;
     position: fixed;
     top: 0;
@@ -973,7 +985,7 @@ display:flex;
         position: relative;
     }
     &__list {
-   
+    padding-left : 0;
     display: flex;
    list-style: none;
     flex-direction: column;
