@@ -823,12 +823,13 @@
   max-width: 2rem;
   max-height: 2rem;
   width: 2rem;
-  height: 1rem; }
+  height: 1rem;
+  transform: rotate(90deg); }
 
 .slider__arrows-second {
-  max-width: 2rem;
-  max-height: 2rem;
-  width: 2rem;
+  height: 1rem;
+  transform: rotate(-90deg);
+  width: 11rem;
   height: 1rem; }
 
 .hamburger-menu-link {
