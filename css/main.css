@@ -806,7 +806,7 @@
     .composition {
       left: -1rem; } }
 
-.slider__arrows {
+.slider__arrow {
   position: absolute;
   display: flex;
   justify-content: space-between;
@@ -817,25 +817,18 @@
   cursor: pointer;
   background: transparent;
   outline: none;
-  background-repeat: no-repeat .slider__arrows -first;
+  background-repeat: no-repeat .slider__arrow s-second;
     background-repeat-width: 2rem;
     background-repeat-height: 1rem;
+    background-repeat-transform: rotate(-44deg);
     background-repeat-background: transparent;
-    background-repeat-border: none;
-    background-repeat-transform: rotate(90deg); }
-  .slider__arrows-second {
-    width: 2rem;
-    height: 1rem;
-    transform: rotate(-44deg);
-    background: transparent;
-    border: none; }
+    background-repeat-border: none; }
 
-slider__arrows-first {
+.slider__arrows-first {
+  max-width: 2rem;
+  max-height: 2rem;
   width: 2rem;
-  height: 1rem;
-  background: transparent;
-  border: none;
-  transform: rotate(90deg); }
+  height: 1rem; }
 
 .hamburger-menu-link {
   display: none; }
