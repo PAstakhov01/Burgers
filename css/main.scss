@@ -442,7 +442,7 @@ color: white;
 
 .team {
 &__desc {
-  
+   display: none;
    @include tablets {
  
   flex-direction: column;

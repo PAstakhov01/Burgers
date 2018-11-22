@@ -347,9 +347,11 @@
       background-size: cover;
       width: 2.85rem; } }
 
-@media (max-width: 768px) {
-  .team__desc {
-    flex-direction: column; } }
+.team__desc {
+  display: none; }
+  @media (max-width: 768px) {
+    .team__desc {
+      flex-direction: column; } }
 .team__post {
   font-size: 14px;
   font-family: "Ubuntu";
