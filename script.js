@@ -1,4 +1,4 @@
-var openButton = document.querySelector('.hamburger-menu-link');
+const openButton = document.querySelector('.hamburger-menu-link');
 const overlay = document.querySelector('.overlay');
 const bars = document.querySelector('.hamburger-menu-link__bars');
 const closeButton = document.querySelector('.hamburger-menu-link');

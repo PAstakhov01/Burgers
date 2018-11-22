@@ -179,6 +179,7 @@
   display: flex; }
 
 .logo {
+  z-index: 99;
   padding-right: 50px; }
 
 .menu {
@@ -845,7 +846,9 @@
       height: 70px;
       right: 1px;
       top: 0px;
-      background: #222; } }
+      border: none;
+      background: #222;
+      z-index: 99; } }
 
 .hamburger-menu-link__bars {
   display: block;
@@ -866,14 +869,13 @@
   top: 54px; }
 
 .overlay {
-  margin-top: 100px;
   display: none;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: #2f3234;
   justify-content: center;
   align-items: center;
   z-index: 50; }
