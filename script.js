@@ -3,7 +3,7 @@ const overlay = document.querySelector('.overlay');
 const bars = document.querySelector('.hamburger-menu-link__bars');
 const closeButton = document.querySelector('.hamburger-menu-link');
 const menuLink = document.querySelectorAll('.overlay__item a');
-const staff = document.querySelectorAll('.team__mate ');
+const staff = document.querySelector('.team__mate');
 const teamdesc = document.querySelector('.team__desc');
 
 openButton.addEventListener( 'click', function (e) {
