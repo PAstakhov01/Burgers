@@ -3,8 +3,7 @@ const overlay = document.querySelector('.overlay');
 const bars = document.querySelector('.hamburger-menu-link__bars');
 const closeButton = document.querySelector('.hamburger-menu-link');
 const menuLink = document.querySelectorAll('.overlay__item a');
-const staff = document.querySelectorAll('.team__item');
-const teamdesc = document.querySelectorAll('.team__desc');
+
 
 openButton.addEventListener( 'click', function (e) {
    e.preventDefault();
@@ -27,12 +26,25 @@ for (var i = 0; i < menuLink.length; i++) {
        };
    });
 }
-for (var i = 0; i < staff.length; i++) {
-staff[i].addEventListener('click' , function(e) {
-    e.preventDefault();
-    staff[i].classList.toggle('.team__mate-activated');
-    if (teamdesc.style.display === 'flex') {
-      teamdesc.style.display = 'none' ;
-    } else { teamdesc.style.display = 'flex' };
-}  ); }
+
+const accordElement =  document.querySelector ('.team__list');
+ createAccord(accordElement);
+
+ function createAccord(element) {
+ const accordItems = element.querySelectorAll ('.team_item');
+    let activeContent;
+
+             for ( let i = 0; i <  accordItems.length; i++) {
+              const accordItems= accordItems[i];
+              accordItems.addEventListener('click', function()  {
+                if (activeContent)  {
+                  activeContent.style.display = 'none' ; }
+                   const Content = accordItems.nextElementSibling ;
+                   Content.style.display = 'flex' ;
+                   activeContent = Content;
+
+
+              });
+             } 
+ }
 
