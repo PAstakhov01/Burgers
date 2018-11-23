@@ -3,8 +3,8 @@ const overlay = document.querySelector('.overlay');
 const bars = document.querySelector('.hamburger-menu-link__bars');
 const closeButton = document.querySelector('.hamburger-menu-link');
 const menuLink = document.querySelectorAll('.overlay__item a');
-const staff = document.querySelector('.team__mate');
-const teamdesc = document.querySelector('.team__desc');
+const staff = document.querySelectorAll('.team__item');
+const teamdesc = document.querySelectorAll('.team__desc');
 
 openButton.addEventListener( 'click', function (e) {
    e.preventDefault();
@@ -27,11 +27,12 @@ for (var i = 0; i < menuLink.length; i++) {
        };
    });
 }
-staff.addEventListener('click' , function(e) {
+for (var i = 0; i < staff.length; i++) {
+staff[i].addEventListener('click' , function(e) {
     e.preventDefault();
-    staff.classList.toggle('.team__mate');
+    staff[i].classList.toggle('.team__mate-activated');
     if (teamdesc.style.display === 'flex') {
       teamdesc.style.display = 'none' ;
     } else { teamdesc.style.display = 'flex' };
-}  );
+}  ); }
 
