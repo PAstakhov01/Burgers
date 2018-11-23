@@ -31,17 +31,17 @@ const accordElement =  document.querySelector ('.team__list');
  createAccord(accordElement);
 
  function createAccord(element) {
- const accordItems = element.querySelectorAll ('.team_item');
+ const accordItems = element.querySelectorAll ('.team__item');
     let activeContent;
 
              for ( let i = 0; i <  accordItems.length; i++) {
-              const accordItems= accordItems[i];
-              accordItems.addEventListener('click', function()  {
+              const accordItem = accordItems[i];
+              accordItem.addEventListener('click', function()  {
                 if (activeContent)  {
                   activeContent.style.display = 'none' ; }
-                   const Content = accordItems.nextElementSibling ;
-                   Content.style.display = 'flex' ;
-                   activeContent = Content;
+                   const content = accordItem.nextElementSibling ;
+                   content.style.display = 'flex' ;
+                   activeContent = content;
 
 
               });
