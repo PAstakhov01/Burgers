@@ -27,24 +27,34 @@ for (var i = 0; i < menuLink.length; i++) {
    });
 }
 
-const accordElement =  document.querySelector ('.team__list');
- createAccord(accordElement);
-
- function createAccord(element) {
- const accordItems = element.querySelectorAll ('.team__item');
-    let activeContent;
-
-             for ( let i = 0; i <  accordItems.length; i++) {
-              const accordItem = accordItems[i];
-              accordItem.addEventListener('click', function()  {
-                if (activeContent)  {
-                  activeContent.style.display = 'none' ; }
-                   const content = accordItem.nextElementSibling ;
-                   content.style.display = 'flex' ;
-                   activeContent = content;
 
 
-              });
-             } 
- }
 
+
+// ТЗ4
+
+
+setAccordion();
+
+function setAccordion() {
+    var teammate = document.getElementsByClassName("team__mate"),
+        teamdesc = document.getElementsByClassName("team__desc"),
+        i,
+        j;
+
+    for (i=0;i<teammate.length;i++){
+        teammate[i].addEventListener('click',function () {
+            for (j=0;j<teamdesc.length;j++){
+                teamdesc[j].style.display = "none";
+            }
+
+            var teamelement=this.nextElementSibling;
+
+            if (teamelement.style.display === "flex") {
+                teamelement.style.display = "none";
+            } else {
+                teamelement.style.display = "flex";
+            }
+        });
+    }
+}

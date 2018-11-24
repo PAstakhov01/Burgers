@@ -816,7 +816,10 @@ display:flex;
     left: 50%;
  
 }
-&__content { display:none; }
+&__content { display:none;     height: 100%;
+    background: rgba(47, 50, 52, 0.93);
+    width: 20rem;
+    }
 }
 
 .slider {
@@ -1002,5 +1005,9 @@ display:flex;
 }
 }
 
+ .activated {
+   display: flex;
+    @include tablets { flex-dircetion: column; }
+  }
 
 
