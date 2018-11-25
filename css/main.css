@@ -439,11 +439,22 @@
   @media (max-width: 768px) {
     .reviews__desc {
       padding: 0 0 0; } }
+  @media (max-width: 768px) {
+    .reviews__desc {
+      margin-top: 3rem;
+      text-align: center; } }
+  @media (max-width: 480px) {
+    .reviews__desc {
+      margin-top: 8rem; } }
 .reviews__title {
   font-size: 0.875rem;
   font-family: Gagalin-Regular;
   color: white;
   margin-bottom: 20px; }
+  @media (max-width: 480px) {
+    .reviews__title {
+      text-align: center;
+      font-size: 1.275rem; } }
 .reviews__text {
   font-size: 0.875rem;
   font-family: "Ubuntu";
@@ -451,6 +462,9 @@
   font-weight: normal;
   line-height: 1.2rem;
   margin-bottom: 1.25rem; }
+  @media (max-width: 480px) {
+    .reviews__text {
+      display: none; } }
 .reviews__button {
   border: none;
   margin-top: 1.5625rem;
@@ -465,6 +479,9 @@
   color: white;
   font-size: 0.756rem;
   text-align: center; }
+  @media (max-width: 768px) {
+    .reviews__button {
+      margin: 0 auto; } }
 .reviews__list {
   list-style: none;
   padding: 0;

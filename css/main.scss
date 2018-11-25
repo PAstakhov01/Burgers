@@ -564,13 +564,15 @@ color: white;
   opacity: 0;
   @include tablets {
       padding: 0 0 0;
-  }
+  } @include tablets {     margin-top: 3rem; text-align: center; } 
+   @include phones { margin-top: 8rem;}
  }
  &__title {
      font-size: 0.875rem;
      font-family: Gagalin-Regular;
     color: white;
-    margin-bottom: 20px;
+    margin-bottom: 20px; @include phones {     text-align: center;
+    font-size: 1.275rem; }
  }
  &__text {
          font-size: 0.875rem;
@@ -578,8 +580,8 @@ font-family: "Ubuntu";
 color: rgb(255, 255, 255);
     font-weight: normal;
    line-height: 1.2rem;
-    margin-bottom: 1.25rem;
- }
+    margin-bottom: 1.25rem;  @include phones { display:none };
+  }
  &__button {
  border:none;
      margin-top: 1.5625rem;
@@ -595,7 +597,7 @@ color: rgb(255, 255, 255);
     font-size: 0.756rem;
     
     text-align: center;
-    
+    @include tablets {     margin: 0 auto;}
  }
   &__list {
   list-style: none;
