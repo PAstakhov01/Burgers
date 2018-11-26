@@ -7,7 +7,7 @@ const menuLink = document.querySelectorAll('.overlay__item a');
 
 openButton.addEventListener( 'click', function (e) {
    e.preventDefault();
-    document.body.classList.toggle('scroll-block');
+    document.body.classList.toggle('scroll-none');
    bars.classList.toggle('.hamburger-menu-link');
    if (overlay.style.display === 'flex') {
        overlay.style.display = 'none';
@@ -60,7 +60,8 @@ function setAccordion() {
             } else {
                 teamelement.style.display = "flex";
             }
-        });
+           
+                   });
     }
 }
 
