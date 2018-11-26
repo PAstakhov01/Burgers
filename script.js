@@ -65,5 +65,27 @@ function setAccordion() {
     }
 }
 
+const additional = document.querySelectorAll('.reviews__button');
+const overlayReview = document.querySelector('.overlay-reviews');
+const reviewsClose = document.querySelector('#overlay-reviews__close');
+const reviewsContent = document.querySelector('.overlay-reviews__content');
 
+
+for (var i = 0; i < additional.length; i++) {
+    additional[i].addEventListener('click', function (e) {
+        e.preventDefault();
+        overlayReview.style.display = 'block';
+        let text = this.previousElementSibling.textContent;
+        reviewsContent.textContent = text;
+
+
+    });
+}
+
+reviewsClose.addEventListener('click', function (e) {
+    e.preventDefault();
+    overlayReview.style.display = 'none';
+
+
+})
 

@@ -440,9 +440,6 @@
     .reviews__desc {
       margin-top: 3rem;
       text-align: center; } }
-  @media (max-width: 480px) {
-    .reviews__desc {
-      margin-top: 8rem; } }
 .reviews__title {
   font-size: 0.875rem;
   font-family: Gagalin-Regular;
@@ -941,6 +938,17 @@
     .activated {
       flex-dircetion: column; } }
 
+.hamburger-menu-link-crossed:nth-child(1) {
+  transform: rotate(49deg);
+  transform: rotate(49deg);
+  left: 2px;
+  top: 10px; }
+
+.hamburger-menu-link-crossed:nth-child(2) {
+  transform: rotate(311deg);
+  top: 10px;
+  left: 0px; }
+
 .video {
   width: auto;
   max-width: 960px;
@@ -962,5 +970,41 @@
 
 .scroll-none {
   overflow: hidden; }
+
+.overlay-reviews {
+  height: 24rem;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  right: 10%;
+  bottom: 10%;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 100500;
+  border-radius: 0.625rem;
+  display: none; }
+  .overlay-reviews__content {
+    margin: 0 auto;
+    padding-top: 10%;
+    text-align: center;
+    width: 14.75rem;
+    font-family: 'Gagalin-Regular'; }
+    @media (max-width: 768px) {
+      .overlay-reviews__content {
+        padding-top: 10%; } }
+    @media (max-width: 480px) {
+      .overlay-reviews__content {
+        padding-top: 30%; } }
+
+.hamburger-menu-cont {
+  top: -0.9375rem;
+  right: -0.9375rem;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  display: block;
+  background: red;
+  width: 1.875rem;
+  height: 1.875rem;
+  border-radius: 50%; }
 
 /*# sourceMappingURL=main.css.map */
