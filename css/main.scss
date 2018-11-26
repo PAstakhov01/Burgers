@@ -563,9 +563,9 @@ color: white;
   padding: 50px 20px 0;
   opacity: 0;
   @include tablets {
-      padding: 0 0 0;
+      
   } @include tablets {     margin-top: 3rem; text-align: center; } 
-   @include phones { margin-top: 8rem;}
+   @include phones { margin-top: 8rem;     }
  }
  &__title {
      font-size: 0.875rem;
@@ -1031,7 +1031,7 @@ width: auto;
     display: flex;
     flex-direction: column;
    &__title {
-       padding-top: 8rem;
+       padding-top: 2rem;
    text-align: center;
 
         color: #2f3234;
@@ -1047,3 +1047,6 @@ width: auto;
    }
 }
 
+.scroll-block {
+  overflow: hidden;
+}

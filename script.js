@@ -7,7 +7,7 @@ const menuLink = document.querySelectorAll('.overlay__item a');
 
 openButton.addEventListener( 'click', function (e) {
    e.preventDefault();
-
+    document.body.classList.toggle('scroll-block');
    bars.classList.toggle('.hamburger-menu-link');
    if (overlay.style.display === 'flex') {
        overlay.style.display = 'none';
@@ -43,14 +43,19 @@ function setAccordion() {
         j;
 
     for (i=0;i<teammate.length;i++){
-        teammate[i].addEventListener('click',function () {
+        teammate[i].addEventListener('click',function ()
+                            
+
+                      {           
             for (j=0;j<teamdesc.length;j++){
                 teamdesc[j].style.display = "none";
+                       
             }
-
+                    
             var teamelement=this.nextElementSibling;
 
             if (teamelement.style.display === "flex") {
+                
                 teamelement.style.display = "none";
             } else {
                 teamelement.style.display = "flex";
@@ -58,3 +63,6 @@ function setAccordion() {
         });
     }
 }
+
+
+
