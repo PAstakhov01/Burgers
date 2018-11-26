@@ -37,31 +37,26 @@ for (var i = 0; i < menuLink.length; i++) {
 setAccordion();
 
 function setAccordion() {
-    var teammate = document.getElementsByClassName("team__mate"),
-        teamdesc = document.getElementsByClassName("team__desc"),
+    var accArrow = document.getElementsByClassName("team__mate"),
+        accArrowBlock = document.getElementsByClassName("team__desc"),
         i,
         j;
 
-    for (i=0;i<teammate.length;i++){
-        teammate[i].addEventListener('click',function ()
-                            
+    for (i=0;i<accArrow.length;i++){
+        accArrow[i].addEventListener('click',function () {
+            var panel=this.nextElementSibling;
 
-                      {           
-            for (j=0;j<teamdesc.length;j++){
-                teamdesc[j].style.display = "none";
-                       
+            for (j=0;j<accArrowBlock.length;j++){
+                if (accArrowBlock[j] != panel)
+                accArrowBlock[j].style.display = "none";
             }
-                    
-            var teamelement=this.nextElementSibling;
 
-            if (teamelement.style.display === "flex") {
-                
-                teamelement.style.display = "none";
+            if (panel.style.display != "flex") {
+                panel.style.display = "flex";
             } else {
-                teamelement.style.display = "flex";
+                panel.style.display = "none";
             }
-           
-                   });
+        });
     }
 }
 
