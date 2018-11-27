@@ -552,9 +552,11 @@ color: white;
 }
 
 
-
+.scroll-set {
+  overflow: unset;
+}
 .reviews {
-
+          @include phones {    height: 100%;}
  &__desc {
  transition: 1s;
 
@@ -565,7 +567,7 @@ color: white;
   opacity: 0;
   @include tablets {
       
-  } @include tablets {     margin-top: 3rem; text-align: center; } 
+  } @include tablets {     margin-top: 3rem; text-align: center; }  @include phones {top: -35%; }
   
  }
  &__title {
@@ -621,12 +623,12 @@ color: rgb(255, 255, 255);
    background-color: #000;
    @include tablets {
    width: 50%;
-   }
+   } @include phones {     height: 25%;}
   }
 &__pic {
     height: 50vh;
     max-width: auto;
-    max-height: auto;
+    max-height: auto; @include phones {     height: 25vh; }
     
 }
 .reviews__item:hover .reviews__desc{
@@ -659,7 +661,7 @@ display: flex;
   font-family: "Gagalin-Regular";
   color: rgb(249, 180, 59);
   line-height: 0.889;
-  text-align: center;  @include tablets {     font-size: 2.75rem; } @include phones {    font-size: 1.2rem; }
+  text-align: center;  @include tablets {     font-size: 2.75rem; } @include phones {     margin-top: 7rem;   font-size: 2.2rem; }
 
   }
     &__title {
@@ -671,7 +673,7 @@ display: flex;
   }
   &__form {
          
-   width: 29.6875rem;
+   width: 29.6875rem; @include phones { width: unset; }
    &-block {
        margin-left: 1.25rem;
    }
@@ -738,7 +740,7 @@ display: flex;
   margin: auto;
   }
 }
-
+.order-pay__block-order { @include phones { text-align: center; } };
 .order__title-pay { color: white; }
 
 .map {
@@ -1037,11 +1039,8 @@ width: auto;
     display: flex;
     flex-direction: column;
    &__title {
-       padding-top: 2rem;
    text-align: center;
-
-        color: #2f3234;
-      
+        color: #2f3234;     
         height: auto;
         font-size: 4.5rem;
         font-family: 'Gagalin-Regular';
@@ -1086,4 +1085,10 @@ height: 24rem;
     width: 1.875rem;
     height: 1.875rem;
     border-radius: 50%;
+}
+.section-reviews {
+   width: 100%;
+  height: 100vh;
+  min-height: 650px;
+  position: relative;
 }

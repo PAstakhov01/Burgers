@@ -69,6 +69,7 @@ const reviewsContent = document.querySelector('.overlay-reviews__content');
 for (var i = 0; i < additional.length; i++) {
     additional[i].addEventListener('click', function (e) {
         e.preventDefault();
+         document.body.classList.toggle('scroll-none');
         overlayReview.style.display = 'block';
         let text = this.previousElementSibling.textContent;
         reviewsContent.textContent = text;
@@ -79,6 +80,7 @@ for (var i = 0; i < additional.length; i++) {
 
 reviewsClose.addEventListener('click', function (e) {
     e.preventDefault();
+     document.body.classList.toggle('scroll-none');
     overlayReview.style.display = 'none';
 
 
