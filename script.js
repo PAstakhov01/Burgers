@@ -86,3 +86,28 @@ reviewsClose.addEventListener('click', function (e) {
 
 })
 
+setAccordionTwo();
+
+function setAccordionTwo() {
+    var accArrow = document.getElementsByClassName("menu-drop__button"),
+        accArrowBlock = document.getElementsByClassName("menu-drop__content"),
+        i,
+        j;
+
+    for (i=0;i<accArrow.length;i++){
+        accArrow[i].addEventListener('click',function () {
+            var panel=this.nextElementSibling;
+
+            for (j=0;j<accArrowBlock.length;j++){
+                if (accArrowBlock[j] != panel)
+                accArrowBlock[j].style.display = "none";
+            }
+
+            if (panel.style.display != "flex") {
+                panel.style.display = "flex";
+            } else {
+                panel.style.display = "none";
+            }
+        });
+    }
+}
