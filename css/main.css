@@ -514,7 +514,7 @@
   max-height: auto; }
   @media (max-width: 480px) {
     .reviews__pic {
-      height: 25vh; } }
+      height: 30vh; } }
 .reviews .reviews__item:hover .reviews__desc {
   opacity: 1; }
 

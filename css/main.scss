@@ -628,7 +628,7 @@ color: rgb(255, 255, 255);
 &__pic {
     height: 50vh;
     max-width: auto;
-    max-height: auto; @include phones {     height: 25vh; }
+    max-height: auto; @include phones {     height: 30vh; }
     
 }
 .reviews__item:hover .reviews__desc{
