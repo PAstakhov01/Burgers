@@ -504,10 +504,11 @@
   background-color: #000; }
   @media (max-width: 768px) {
     .reviews__item {
-      width: 50%; } }
+      width: 25%; } }
   @media (max-width: 480px) {
     .reviews__item {
-      height: 25%; } }
+      height: 25%;
+      width: 50%; } }
 .reviews__pic {
   height: 50vh;
   max-width: auto;
@@ -1000,16 +1001,14 @@
   overflow: hidden; }
 
 .overlay-reviews {
-  height: 24rem;
-  position: absolute;
-  top: 10%;
-  left: 10%;
-  right: 10%;
-  bottom: 10%;
-  background-color: rgba(255, 255, 255, 0.9);
-  z-index: 100500;
-  border-radius: 0.625rem;
-  display: none; }
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  align-items: center;
+  display: none;
+  background-color: #2f3234; }
   .overlay-reviews__content {
     margin: 0 auto;
     padding-top: 10%;
@@ -1021,7 +1020,23 @@
         padding-top: 10%; } }
     @media (max-width: 480px) {
       .overlay-reviews__content {
-        padding-top: 30%; } }
+        padding-top: unset; } }
+  .overlay-reviews__container {
+    width: 25rem;
+    height: 15rem;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    background-color: #ffff;
+    color: #2f3234;
+    border-radius: 5px;
+    border-radius: 5px;
+    padding: 2rem 1.5rem; }
+    @media (max-width: 480px) {
+      .overlay-reviews__container {
+        width: 14rem;
+        height: 8rem; } }
 
 .hamburger-menu-cont {
   top: -0.9375rem;

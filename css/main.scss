@@ -622,8 +622,8 @@ color: rgb(255, 255, 255);
   align-items: center;
    background-color: #000;
    @include tablets {
-   width: 50%;
-   } @include phones {     height: 25%;}
+   width: 25%;
+   } @include phones {     height: 25%; width:50%; }
   }
 &__pic {
     height: 50vh;
@@ -1074,22 +1074,35 @@ width: auto;
   overflow: hidden;
 }
 .overlay-reviews {
-height: 24rem;
-      position: absolute;
-    top: 10%;
-    left: 10%;
-    right: 10%;
-    bottom: 10%;
-    background-color: rgba(255, 255, 255, 0.9);
-    z-index: 100500;
-    border-radius: 0.625rem;
+      position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    align-items: center;
     display: none;
+    background-color: #2f3234;
+    
   &__content {
       margin: 0 auto;
    padding-top: 10% ;
     text-align: center;
       width: 14.75rem;
-      font-family: 'Gagalin-Regular'; @include tablets {     padding-top: 10% } @include phones {         padding-top: 30%;}
+      font-family: 'Gagalin-Regular'; @include tablets {     padding-top: 10% } @include phones {         padding-top: unset;}
+  }
+  &__container {
+     width: 25rem;
+    height: 15rem;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    background-color: #ffff;
+    color: #2f3234;
+    border-radius: 5px;
+    border-radius: 5px;
+    padding: 2rem 1.5rem; @include phones { width: 14rem; height: 8rem; }
+   
   }
 }
 .hamburger-menu-cont {
