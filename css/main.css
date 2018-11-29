@@ -250,7 +250,10 @@
 @media (max-width: 768px) {
   .banner-left__pic {
     margin-top: 0;
-    width: 60%; } }
+    width: 100%; } }
+@media (max-width: 480px) {
+  .banner-left__pic {
+    width: 75%; } }
 
 .banner-right {
   padding-left: 60px; }
@@ -266,10 +269,13 @@
     text-align: left; }
     @media (max-width: 768px) {
       .banner-right__main {
-        font-size: 50px;
+        font-size: 5rem;
         float: none;
         text-align: center;
         align-items: center; } }
+    @media (max-width: 480px) {
+      .banner-right__main {
+        font-size: 3rem; } }
   .banner-right__text {
     font-size: 62px;
     text-align: left;
@@ -278,11 +284,16 @@
     font-family: "Lifehack"; }
     @media (max-width: 768px) {
       .banner-right__text {
-        font-size: 44px;
+        width: 25rem;
+        font-size: 3rem;
         display: flex;
         flex-direction: column;
         text-align: center;
-        align-items: center; } }
+        align-items: center;
+        margin: 0 auto; } }
+    @media (max-width: 480px) {
+      .banner-right__text {
+        font-size: 2.5rem; } }
 
 .arrow__link {
   display: block;
@@ -299,6 +310,9 @@
 .best__desc {
   vertical-align: middle;
   text-align: center; }
+  @media (max-width: 480px) {
+    .best__desc {
+      text-align: left; } }
 .best__list {
   padding: 0;
   vertical-align: middle;
@@ -329,9 +343,11 @@
   text-align: center; }
   @media (max-width: 480px) {
     .best__main {
+      padding-left: 6.5rem;
+      text-align: left;
       margin-bottom: 0.625rem;
       line-height: 0.250;
-      font-size: 1.2rem; } }
+      font-size: 1rem; } }
 .best__text {
   font-family: Ubuntu;
   font-weight: 300;
@@ -341,9 +357,10 @@
   opacity: .8; }
   @media (max-width: 480px) {
     .best__text {
-      font-size: 0.625rem;
-      line-height: 0.250;
-      line-height: 1.5rem; } }
+      padding-left: 6.5rem;
+      height: 11rem;
+      width: 12rem;
+      opacity: 0.8; } }
 .best__picture {
   height: 100px;
   background-repeat: no-repeat;
@@ -354,12 +371,24 @@
       height: 2.55rem;
       background-size: cover;
       width: 2.85rem; } }
+  @media (max-width: 480px) and (max-width: 480px) {
+    .best__picture {
+      float: left;
+      margin-left: 1.2rem;
+      height: 4.3125rem;
+      width: 4.85rem; } }
 
 .team__desc {
   display: none; }
   @media (max-width: 768px) {
     .team__desc {
       flex-direction: column; } }
+.team__about {
+  width: 20rem;
+  margin: 0 auto; }
+  @media (max-width: 480px) {
+    .team__about {
+      width: 15rem; } }
 .team__post {
   font-size: 14px;
   font-family: "Ubuntu";
@@ -445,10 +474,12 @@
   @media (max-width: 768px) {
     .reviews__desc {
       margin-top: 3rem;
-      text-align: center; } }
+      text-align: center;
+      padding: 0 0 0; } }
   @media (max-width: 480px) {
     .reviews__desc {
-      top: -35%; } }
+      top: -35%;
+      padding: 50px 20px 0; } }
 .reviews__title {
   font-size: 0.875rem;
   font-family: Gagalin-Regular;
@@ -504,7 +535,8 @@
   background-color: #000; }
   @media (max-width: 768px) {
     .reviews__item {
-      width: 25%; } }
+      width: 50%;
+      heigjt: 25%; } }
   @media (max-width: 480px) {
     .reviews__item {
       height: 25%;
@@ -513,6 +545,9 @@
   height: 50vh;
   max-width: auto;
   max-height: auto; }
+  @media (max-width: 768px) {
+    .reviews__pic {
+      height: 25vh; } }
   @media (max-width: 480px) {
     .reviews__pic {
       height: 30vh; } }
@@ -535,6 +570,9 @@
   position: relative;
   float: left;
   border: transparent; }
+  @media (max-width: 480px) {
+    .menu-drop__button {
+      width: 60px; } }
 
 .order {
   display: flex; }
@@ -549,8 +587,10 @@
         font-size: 2.75rem; } }
     @media (max-width: 480px) {
       .order__main {
-        margin-top: 7rem;
-        font-size: 2.2rem; } }
+        margin: 0 auto;
+        width: 15rem;
+        padding-bottom: 3rem;
+        font-size: 3rem; } }
   .order__title {
     text-align: left;
     font-family: "Ubuntu";
@@ -637,7 +677,7 @@
   @media (max-width: 768px) {
     .order {
       display: block;
-      margin: auto; } }
+      margin: 0 auto; } }
 
 @media (max-width: 480px) {
   .order-pay__block-order {
@@ -769,17 +809,20 @@
       .slide__img {
         width: 100%; } }
   .slide__title {
+    margin: 0 auto;
+    width: 25rem;
     color: #ffffff;
     font-family: 'Gagalin-Regular';
-    font-size: 72px;
-    font-weight: 400;
-    line-height: 63.93px; }
+    font-size: 4rem;
+    font-weight: 400; }
     @media (max-width: 480px) {
       .slide__title {
         margin: 0 auto;
-        font-size: 2rem; } }
+        font-size: 2rem;
+        width: 10rem; } }
   .slide__text {
-    width: 441px;
+    padding-top: 1rem;
+    width: 25rem;
     height: 86px;
     color: #ffffff;
     font-family: 'Ubuntu';
@@ -804,14 +847,12 @@
     @media (max-width: 480px) {
       .slide__number {
         font-size: 2rem; } }
-  .slide__price {
-    display: flex; }
-    @media (max-width: 768px) {
-      .slide__price {
-        margin-top: 2rem; } }
-    @media (max-width: 480px) {
-      .slide__price {
-        margin-top: 4rem; } }
+  @media (max-width: 768px) {
+    .slide__price {
+      margin-top: 2rem; } }
+  @media (max-width: 480px) {
+    .slide__price {
+      margin-top: 4rem; } }
   .slide__curent {
     color: #e35028;
     font-family: 'Gagalin-Regular';
@@ -819,12 +860,11 @@
     letter-spacing: -0.75px; }
     @media (max-width: 768px) {
       .slide__curent {
-        font-size: 2.5rem;
-        margin-left: 1rem; } }
+        font-size: 1.5rem; } }
     @media (max-width: 480px) {
       .slide__curent {
         margin-left: 0.4rem;
-        font-size: 2rem; } }
+        font-size: 1.2rem; } }
   .slide__order {
     display: flex; }
     @media (max-width: 768px) {
@@ -832,7 +872,7 @@
         margin-left: 7rem; } }
     @media (max-width: 480px) {
       .slide__order {
-        margin-left: 0rem; } }
+        margin-left: 1.5rem; } }
   .slide__button {
     padding-top: 40px;
     padding-left: 20px; }

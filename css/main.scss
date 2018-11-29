@@ -325,8 +325,8 @@ z-index: 99;
     &__pic {
    @include tablets {
            margin-top: 0;
-    width: 60%; 
-   }
+    width: 100%; 
+   } @include phones { width:75%;}
     } 
 }
 .banner-right {
@@ -345,11 +345,11 @@ float: left;
  
   text-align: left;
     @include tablets {
-    font-size: 50px;
-     float: none;
+       font-size: 5rem;
+    float: none;
     text-align: center;
     align-items: center;
-   }
+   } @include phones { font-size: 3rem; }
  
 
 }
@@ -358,15 +358,17 @@ font-size: 62px;
   text-align: left;
 color: white;
     line-height: 60px;
-   font-family: "Lifehack";
+   font-family: "Lifehack"; 
 
    @include tablets {
-     font-size: 44px;
-   display: flex;
+      width: 25rem;
+    font-size: 3rem;
+    display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
-   }
+    margin: 0 auto;
+   } @include phones { font-size: 2.5rem; }
 }
 }
 
@@ -396,8 +398,9 @@ color: white;
     
      &__desc {
          vertical-align: middle;
- text-align: center;
+ text-align: center; @include phones { text-align: left;
     }
+ }
   &__list { 
   padding: 0;
        vertical-align: middle;
@@ -424,8 +427,11 @@ color: white;
   font-family: "Lifehack";
   color: rgb(47, 50, 52);
   line-height: 1.167;
-  text-align: center; @include phones {      margin-bottom: 0.625rem;      line-height: 0.250;
-    font-size: 1.2rem;}
+  text-align: center; @include phones {      padding-left: 6.5rem;
+    text-align: left;
+    margin-bottom: 0.625rem;
+    line-height: 0.250;
+    font-size: 1rem; }
   }
   &__text { 
     font-family: Ubuntu;
@@ -433,8 +439,10 @@ color: white;
     color: #2f3234;
     font-size: 0.875rem;
         line-height: 1.5rem;
-    opacity: .8; @include phones {     font-size: 0.625rem;  line-height: 0.250;
-    line-height: 1.5rem; }
+    opacity: .8; @include phones {     padding-left: 6.5rem;
+    height: 11rem;
+    width: 12rem;
+    opacity: 0.8;  }
  
   }
  &__picture {
@@ -446,7 +454,9 @@ color: white;
     @include phones {    
         height: 2.55rem;
     background-size: cover;
-    width: 2.85rem;}
+    width: 2.85rem; @include phones {        float: left;
+    margin-left: 1.2rem;
+    height: 4.3125rem; width: 4.85rem;  }}
     }
 
 }
@@ -459,7 +469,10 @@ color: white;
   flex-direction: column;
   }
 }
-
+&__about {
+      width: 20rem;
+    margin: 0 auto; @include phones { width: 15rem;}
+}
 &__post { 
   font-size: 14px;
   font-family: "Ubuntu";
@@ -567,7 +580,7 @@ color: white;
   opacity: 0;
   @include tablets {
       
-  } @include tablets {     margin-top: 3rem; text-align: center; }  @include phones {top: -35%; }
+  } @include tablets {     margin-top: 3rem; text-align: center;  padding: 0 0 0;}  @include phones {top: -35%; padding: 50px 20px 0; }
   
  }
  &__title {
@@ -622,15 +635,18 @@ color: rgb(255, 255, 255);
   align-items: center;
    background-color: #000;
    @include tablets {
-   width: 25%;
-   } @include phones {     height: 25%; width:50%; }
+   width: 50%;
+ heigjt: 25%;   } @include phones {     height: 25%; width:50%; }
   }
 &__pic {
     height: 50vh;
     max-width: auto;
-    max-height: auto; @include phones {     height: 30vh; }
+    max-height: auto;
+     @include tablets { height: 25vh; }
+     @include phones {     height: 30vh; } 
+    }
     
-}
+
 .reviews__item:hover .reviews__desc{
    opacity: 1;
 }
@@ -655,19 +671,22 @@ color: rgb(255, 255, 255);
     position: relative;
     float: left;
     
-    border: transparent;
+    border: transparent; @include phones { width:60px; }
   }
 }
 
 
-.order {
-display: flex; 
+.order   {
+display: flex;  
   &__main {
   font-size: 4.5rem;
   font-family: "Gagalin-Regular";
   color: rgb(249, 180, 59);
   line-height: 0.889;
-  text-align: center;  @include tablets {     font-size: 2.75rem; } @include phones {     margin-top: 7rem;   font-size: 2.2rem; }
+  text-align: center;  @include tablets {     font-size: 2.75rem; } @include phones {     margin: 0 auto;
+    width: 15rem;
+    padding-bottom: 3rem;
+    font-size: 3rem;  }
 
   }
     &__title {
@@ -675,7 +694,7 @@ display: flex;
       font-family: "Ubuntu";
     font-size: 0.875rem;
     line-height: 1.5rem;
-    color: white;
+    color: white; 
   }
   &__form {
          
@@ -743,8 +762,9 @@ display: flex;
 }
   @include tablets {
   display: block;
-  margin: auto;
+     margin: 0 auto;
   }
+
 }
 .order-pay__block-order { @include phones { text-align: center; } };
 .order__title-pay { color: white; }
@@ -880,14 +900,16 @@ display:flex;
     margin-top: 6.6875rem;   @include tablets {   width: 100%;}
         }
         &__title {
-            color: #ffffff;
+               margin: 0 auto;
+    width: 25rem;
+    color: #ffffff;
     font-family: 'Gagalin-Regular';
-    font-size: 72px;
-    font-weight: 400;
-    line-height: 63.93px; @include phones { margin: 0 auto; font-size: 2rem; }
+    font-size: 4rem;
+    font-weight: 400;; @include phones { margin: 0 auto; font-size: 2rem; width: 10rem; }
         }
         &__text {
-            width: 441px;
+        padding-top: 1rem;
+            width: 25rem;
     height: 86px;
     color: #ffffff;
     font-family: 'Ubuntu';
@@ -902,16 +924,16 @@ display:flex;
     letter-spacing: -1.79px; @include tablets {     font-size: 2.5rem }  @include phones {font-size: 2rem;}
         }
         &__price {     
-    display: flex; @include tablets {     margin-top: 2rem; } @include phones { margin-top: 4rem; }}  
+     @include tablets {     margin-top: 2rem; } @include phones { margin-top: 4rem; }}  
         &__curent {
     color: #e35028;
     font-family: 'Gagalin-Regular';
     font-size: 30px;
-    letter-spacing: -0.75px; @include tablets {     font-size: 2.5rem;
-    margin-left: 1rem; } @include phones { margin-left: 0.4rem; font-size: 2rem;}
+    letter-spacing: -0.75px; @include tablets {     font-size: 1.5rem;
+   } @include phones { margin-left: 0.4rem; font-size: 1.2rem;}
         } 
         &__order {
-            display: flex; @include tablets { margin-left: 7rem; } @include phones {     margin-left: 0rem; }
+            display: flex; @include tablets { margin-left: 7rem; } @include phones {     margin-left: 1.5rem; }
         }
         &__button {
             padding-top: 40px;
