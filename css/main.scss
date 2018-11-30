@@ -519,7 +519,7 @@ color: white;
 
   }
   &__list {
-  list-style: none;
+  list-style: none;  @include tablets { padding: 0 ;}
   }
   &__item {
       margin-bottom:  1.25rem;
@@ -665,7 +665,7 @@ color: rgb(255, 255, 255);
 
 .menu-drop {
   &__button {
-   background-color: rgba(20, 20, 20, 0.7);
+     background-color: rgba(20, 20, 20, 0.0);
       width: 80px;
     height: 100%;
     position: relative;
@@ -841,7 +841,7 @@ display:flex;
     cursor: pointer;
     height: 100vh;
     
-    background-color: rgba(20, 20, 20, 0.7);
+      background-color: rgba(20, 20, 20, 0.0);
     list-style: none;
     text-decoration: none;
     position: relative; 
@@ -855,14 +855,14 @@ display:flex;
     writing-mode: vertical-lr;
     text-align: center;
     bottom: 50px;
-    left: 50%;
+    left: 50%; @include phones { font-size: 1.5rem ;}
  
 }
 &__content {     width: 90%;
     height: 100%;
     color: #ffffff;
     line-height: 1.71429rem;
-    background-color: #2f3234;
+       background: rgba(47, 50, 52, 0.93);
     
     float: left;
     display: none;
@@ -882,6 +882,9 @@ display:flex;
     display: flex;
     justify-content: center;
     align-items: center;
+    &__list { display: flex;     display: flex;
+    width: 100%;
+    position: relative; }
     &__item {
         position: relative;
         list-style: none;
@@ -1145,3 +1148,17 @@ width: auto;
   min-height: 650px;
   position: relative;
 }
+.menu-drop__button { background-size: cover;
+
+  background-repeat: no-repeat;} 
+
+ .payment__block {
+     padding-top: 1rem;
+   
+    text-align: left;
+    padding-left: 0.5rem; @include phones { text-align:center; padding-left:0;}
+ }
+ .payment__input-call  {  position: relative;
+    width: 1rem;
+    height: 1rem;
+    background-color: #fff; }
