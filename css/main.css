@@ -1132,4 +1132,7 @@
   height: 1rem;
   background-color: #fff; }
 
+.showing {
+  display: none; }
+
 /*# sourceMappingURL=main.css.map */

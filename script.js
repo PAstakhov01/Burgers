@@ -111,3 +111,12 @@ function setAccordionTwo() {
         });
     }
 }
+
+
+
+var slides = document.querySelectorAll('#slides .slider__item');
+
+function nextSlide() {
+ slides.className = 'slider__item';
+ slides.className = 'slider__item showing';
+}
