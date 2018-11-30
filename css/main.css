@@ -792,12 +792,17 @@
   align-items: center; }
   .slider__list {
     display: flex;
-    display: flex;
     width: 100%;
-    position: relative; }
+    position: relative;
+    overflow: hidden; }
   .slider__item {
     position: relative;
-    list-style: none; }
+    list-style: none;
+    width: 100%;
+    flex: 0 0 auto; }
+    @media (max-width: 480px) {
+      .slider__item {
+        width: 106%; } }
 
 .slide {
   display: flex; }
@@ -880,7 +885,8 @@
     display: flex; }
     @media (max-width: 768px) {
       .slide__order {
-        margin-left: 7rem; } }
+        margin: 0 auto;
+        width: 17rem; } }
     @media (max-width: 480px) {
       .slide__order {
         margin-left: 1.5rem; } }

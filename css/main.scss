@@ -882,12 +882,15 @@ display:flex;
     display: flex;
     justify-content: center;
     align-items: center;
-    &__list { display: flex;     display: flex;
+    &__list { display: flex;
     width: 100%;
-    position: relative; }
+    position: relative;
+    overflow: hidden; }
     &__item {
         position: relative;
-        list-style: none;
+    list-style: none;
+    width: 100%;
+    flex: 0 0 auto; @include phones { width: 106%; }
     }
     }
     .slide {    @include phones {     margin-right: 2rem; }
@@ -936,7 +939,8 @@ display:flex;
    } @include phones { margin-left: 0.4rem; font-size: 1.2rem;}
         } 
         &__order {
-            display: flex; @include tablets { margin-left: 7rem; } @include phones {     margin-left: 1.5rem; }
+            display: flex; @include tablets {     margin: 0 auto;
+    width: 17rem; } @include phones {     margin-left: 1.5rem; }
         }
         &__button {
             padding-top: 40px;
