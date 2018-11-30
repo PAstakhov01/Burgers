@@ -114,9 +114,27 @@ function setAccordionTwo() {
 
 
 
-var slides = document.querySelectorAll('#slides .slider__item');
-
-function nextSlide() {
- slides.className = 'slider__item';
- slides.className = 'slider__item showing';
+for(var i=0; i<controls.length; i++){
+    controls[i].style.display = 'flex';
 }
+var controls = document.querySelectorAll('.slider__arrow');
+
+var slides = document.querySelectorAll('#slides .slider__item ');
+var currentSlide = 0;
+var slideInterval = setInterval(nextSlide,2000);
+
+function nextSlide(){
+    goToSlide(currentSlide+1);
+}
+
+function previousSlide(){
+    goToSlide(currentSlide-1);
+}
+
+function goToSlide(n){
+    slides[currentSlide].className = 'slider__item ';
+    currentSlide = (n+slides.length)%slides.length;
+    slides[currentSlide].className = 'slider__item showing';
+}
+
+
