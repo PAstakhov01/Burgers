@@ -5,13 +5,100 @@
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no, maximum-scale=1" /> 
 	<title>Burgers</title>
    
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400i,600%7CRoboto:400,400i" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	    <script src="https://api-maps.yandex.ru/2.1/?apikey=<ваш API-ключ>&lang=ru_RU" type="text/javascript"></script>
+          <script type="text/javascript">
+    ymaps.ready(init);
 
+var placemarks = [
+    {
+        latitude: 59.89,
+        longitude: 30.41,
+        hintContent: '<div class="map__hint">ул. Бабушкина, д.12/1, 15</div>',
+        balloonContent: [
+            '<div class="map__balloon">',
+            'Самые вкусные бургеры у нас! Заходите по адресу: ул. Бабушкина, д.12/1, 15',
+            '</div>'
+        ]
+    },
+    {
+        latitude: 59.97,
+        longitude: 30.31,
+        hintContent: '<div class="map__hint">Аптекарская наб дом 22</div>',
+        balloonContent: [
+            '<div class="map__balloon">',            
+            'Самые вкусные бургеры у нас! Заходите по адресу:Аптекарская наб дом 22',
+            '</div>'
+        ]
+    },
+    {
+        latitude: 59.95,
+        longitude: 30.38,
+        hintContent: '<div class="map__hint">ул.Шляперная дом 8</div>',
+        balloonContent: [
+            '<div class="map__balloon">',           
+            'Самые вкусные бургеры у нас! Заходите по адресу:ул.Шляперная дом 8',
+            '</div>'
+        ]
+    },
+    {
+        latitude: 59.93,
+        longitude: 30.34,
+        hintContent: '<div class="map__hint">наб. реки Фонтанки, д. 56</div>',
+        balloonContent: [
+            '<div class="map__balloon">',           
+            'Самые вкусные бургеры у нас! Заходите по адресу: наб. реки Фонтанки, д. 56',
+            '</div>'
+        ]
+    }
+],
+    geoObjects= [];
+
+function init() {
+    var map = new ymaps.Map('map', {
+        center: [59.94, 30.32],
+        zoom: 12,
+        controls: ['zoomControl'],
+        behaviors: ['drag']
+    });
+
+    for (var i = 0; i < placemarks.length; i++) {
+            geoObjects[i] = new ymaps.Placemark([placemarks[i].latitude, placemarks[i].longitude],
+            {
+                hintContent: placemarks[i].hintContent,
+                balloonContent: placemarks[i].balloonContent.join('')
+            },
+            {
+                iconLayout: 'default#image',
+                iconImageHref: 'img/sprite.png',
+                iconImageSize: [46, 57],
+                iconImageOffset: [-23, -57],
+                iconImageClipRect: [[415, 0], [461, 57]]
+            });
+    }
+
+    var clusterer = new ymaps.Clusterer({
+        clusterIcons: [
+            {
+                href: 'img/burger.png',
+                size: [100, 100],
+                offset: [-50, -50]
+            }
+        ],
+        clusterIconContentLayout: null
+    });
+
+    map.geoObjects.add(clusterer);
+    clusterer.add(geoObjects);
+}
+
+    </script>
 <body>
 	<div class="wrapper">
 <section class="section-top" id="top">
@@ -506,9 +593,8 @@
 </section>
 
 <section class="section-map">
-	<div class="section-map__container" style="height:100%;">
-	       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2001.1639687035156!2d30.42208421609526!3d59.89622798186076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46962fccc4c0512b%3A0xad34528f97d3c3e8!2z0YPQuy4g0JHQsNCx0YPRiNC60LjQvdCwLCAxMiwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MjAyOQ!5e0!3m2!1sru!2sru!4v1543174918721" width="100%" height="95%" frameborder="0" style="border:0" allowfullscreen></iframe>
-	</div>
+	<div id="map" style="width: 100%; height: 95%"></div>
+
 	<footer class="map__footer">
 		 <div class="map__container">
 		 	<div class="map__info">
@@ -552,6 +638,7 @@
 		 	</div>
 		 </div>
 	</footer>
+
 </section>
 
 	
@@ -570,8 +657,8 @@
 		</div>
 	</div>
 </body>
-<script type="text/javascript" src="jquery.js"></script>
-	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="script.js"></script>	
+	<script type="text/javascript" src="jquery.js"></script>
 
 </html>
 
