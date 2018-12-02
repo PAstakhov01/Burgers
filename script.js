@@ -114,27 +114,35 @@ function setAccordionTwo() {
 
 
 
-for(var i=0; i<controls.length; i++){
-    controls[i].style.display = 'flex';
-}
-var controls = document.querySelectorAll('.slider__arrow');
+// Slider
+var arrSlides = document.querySelectorAll('.slider .slider__item'),
+    counterSlides = 0,
+    prev = document.getElementById('silde__prev'),
+    next = document.getElementById('slide__next'),
+    intervalSlide = setInterval(playSlide,5000);
 
-var slides = document.querySelectorAll('#slides .slider__item ');
-var currentSlide = 0;
-var slideInterval = setInterval(nextSlide,2000);
+console.log(prev.length);
+
+function playSlide(){
+  arrSlides[counterSlides].className = 'slider__item';
+  counterSlides = (counterSlides+1)%arrSlides.length;
+  arrSlides[counterSlides].className = 'slider__item slide__show';
+}
 
 function nextSlide(){
-    goToSlide(currentSlide+1);
+    playSlide(currentSlide+1);
 }
 
-function previousSlide(){
-    goToSlide(currentSlide-1);
+function previousSlide() {
+    playSlide(currentSlide - 1);
 }
 
-function goToSlide(n){
-    slides[currentSlide].className = 'slider__item ';
-    currentSlide = (n+slides.length)%slides.length;
-    slides[currentSlide].className = 'slider__item showing';
+prev.onclick = function () {
+    clearInterval(intervalSlide);
+    prevSlide();
 }
 
-
+next.onclick = function () {
+    clearInterval(intervalSlide);
+    nextSlide();
+}
