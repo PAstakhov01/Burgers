@@ -144,11 +144,11 @@ function prevSlide() {
 prev.onclick = function () {
     clearInterval(intervalSlide);
     prevSlide();
-    intervalSlide = setInterval(playSlide,5000);
+  
 }
 
 next.onclick = function () {
     clearInterval(intervalSlide);
     nextSlide();
-    intervalSlide = setInterval(playSlide,5000);
+  
 }
