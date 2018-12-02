@@ -820,11 +820,14 @@
       flex-direction: column;
       text-align: center; } }
   .slide__img {
-    width: 60%;
-    margin-top: 6.6875rem; }
+    margin-top: 3rem;
+    margin-left: 3rem;
+    width: 60%; }
     @media (max-width: 768px) {
       .slide__img {
-        width: 100%; } }
+        width: 100%;
+        margin-top: 6.6875rem;
+        margin-left: 0; } }
   .slide__title {
     margin: 0 auto;
     width: 25rem;
@@ -967,6 +970,9 @@
       border: none;
       background: #222;
       z-index: 99; } }
+
+.slide {
+  width: 100%; }
 
 .slide__show {
   display: flex; }

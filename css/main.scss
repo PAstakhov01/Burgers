@@ -903,8 +903,10 @@ display:flex;
     text-align: center; 
     }
         &__img {
+            margin-top: 3rem;
+    margin-left: 3rem;
             width: 60%;
-    margin-top: 6.6875rem;   @include tablets {   width: 100%;}
+   @include tablets {   width: 100%;     margin-top: 6.6875rem; margin-left:0;}
         }
         &__title {
                margin: 0 auto;
@@ -1007,6 +1009,7 @@ display:flex;
  z-index: 99;
 }
 }
+.slide { width:100%; }
 .slide__show { display:flex; }
 .hamburger-menu-link__bars {
   display: block;
