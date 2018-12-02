@@ -121,28 +121,34 @@ var arrSlides = document.querySelectorAll('.slider .slider__item'),
     next = document.getElementById('slide__next'),
     intervalSlide = setInterval(playSlide,5000);
 
-console.log(prev.length);
-
 function playSlide(){
   arrSlides[counterSlides].className = 'slider__item';
   counterSlides = (counterSlides+1)%arrSlides.length;
   arrSlides[counterSlides].className = 'slider__item slide__show';
 }
 
+function goToSlide(n) {
+    arrSlides[counterSlides].className = 'slider__item';
+    counterSlides = (n+arrSlides.length)%arrSlides.length;
+    arrSlides[counterSlides].className = 'slider__item slide__show';
+}
+
 function nextSlide(){
-    playSlide(counterSlides+1);
+    goToSlide(counterSlides+1);
 }
 
 function prevSlide() {
-    playSlide(counterSlides-1);
+    goToSlide(counterSlides-1);
 }
 
 prev.onclick = function () {
     clearInterval(intervalSlide);
     prevSlide();
+    intervalSlide = setInterval(playSlide,5000);
 }
 
 next.onclick = function () {
     clearInterval(intervalSlide);
     nextSlide();
+    intervalSlide = setInterval(playSlide,5000);
 }

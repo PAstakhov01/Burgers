@@ -796,6 +796,7 @@
     position: relative;
     overflow: hidden; }
   .slider__item {
+    display: none;
     position: relative;
     list-style: none;
     width: 100%;
@@ -966,6 +967,9 @@
       border: none;
       background: #222;
       z-index: 99; } }
+
+.slide__show {
+  display: flex; }
 
 .hamburger-menu-link__bars {
   display: block;
