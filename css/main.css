@@ -945,11 +945,11 @@
   max-height: 2rem;
   width: 2rem;
   height: 1rem;
-  transform: rotate(45deg); }
+  transform: rotate(90deg); }
 
 .slider__arrows-second {
   height: 1rem;
-  transform: rotate(-45deg);
+  transform: rotate(-90deg);
   width: 2rem;
   height: 1rem; }
 
