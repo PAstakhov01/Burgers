@@ -895,8 +895,13 @@ display:flex;
     }
     }
     .slide {    @include phones {     margin-right: 2rem; }
-    &__pic { @include phones {     margin: 0 auto;
-    width: 280px; } }
+    &__pic 
+    {  width: 435px;
+    height: 320px;
+     @include phones {        margin: 0 auto;
+    width: 250px;
+    height: 180px;
+    padding-right: 1rem; } }
         display: flex; @include tablets {     
     display: flex;    
     flex-direction: column;
@@ -943,7 +948,7 @@ display:flex;
         } 
         &__order {
             display: flex; @include tablets {     margin: 0 auto;
-    width: 17rem; } @include phones {     margin-left: 1.5rem; }
+    width: 17rem; }
         }
         &__button {
             padding-top: 40px;

@@ -810,10 +810,15 @@
   @media (max-width: 480px) {
     .slide {
       margin-right: 2rem; } }
-  @media (max-width: 480px) {
-    .slide__pic {
-      margin: 0 auto;
-      width: 280px; } }
+  .slide__pic {
+    width: 435px;
+    height: 320px; }
+    @media (max-width: 480px) {
+      .slide__pic {
+        margin: 0 auto;
+        width: 250px;
+        height: 180px;
+        padding-right: 1rem; } }
   @media (max-width: 768px) {
     .slide {
       display: flex;
@@ -891,9 +896,6 @@
       .slide__order {
         margin: 0 auto;
         width: 17rem; } }
-    @media (max-width: 480px) {
-      .slide__order {
-        margin-left: 1.5rem; } }
   .slide__button {
     padding-top: 40px;
     padding-left: 20px; }
