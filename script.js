@@ -130,11 +130,11 @@ function playSlide(){
 }
 
 function nextSlide(){
-    playSlide(currentSlide+1);
+    playSlide(counterSlides+1);
 }
 
-function previousSlide() {
-    playSlide(currentSlide - 1);
+function prevSlide() {
+    playSlide(counterSlides-1);
 }
 
 prev.onclick = function () {
