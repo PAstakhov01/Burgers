@@ -119,7 +119,7 @@ var arrSlides = document.querySelectorAll('.slider .slider__item'),
     counterSlides = 0,
     prev = document.getElementById('silde__prev'),
     next = document.getElementById('slide__next'),
-    intervalSlide = setInterval(playSlide,5000);
+    intervalSlide = setInterval(playSlide,60000);
 
 function playSlide(){
   arrSlides[counterSlides].className = 'slider__item';
