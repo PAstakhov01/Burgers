@@ -821,7 +821,7 @@
       text-align: center; } }
   .slide__img {
     margin-top: 3rem;
-    margin-left: 3rem;
+    margin-left: 6rem;
     width: 60%; }
     @media (max-width: 768px) {
       .slide__img {
